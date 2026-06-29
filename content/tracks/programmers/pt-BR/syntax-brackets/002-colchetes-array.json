@@ -1,0 +1,23 @@
+{
+  "id": "002-colchetes-array",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "pt-BR",
+  "title": "Colchetes de Array",
+  "description": "Digite literais de array e acesso por índice com colchetes.",
+  "difficulty": 1,
+  "estimatedMinutes": 2,
+  "skills": ["array-brackets", "indexing"],
+  "tags": ["javascript"],
+  "mode": "code",
+  "content": {
+    "text": "const itens = ['a', 'b', 'c'];\nconst primeiro = itens[0];\nconst aninhado = [[1], [2]];",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": { "minWpm": 30, "minAccuracy": 90 },
+  "hints": { "keyboard": ["[", "]"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

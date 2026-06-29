@@ -1,0 +1,21 @@
+{
+  "id": "001-user-story",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "User Story Format",
+  "description": "Practice typing standard user story sentences.",
+  "difficulty": 1,
+  "estimatedMinutes": 2,
+  "skills": ["user-stories"],
+  "tags": ["agile", "requirements"],
+  "mode": "prose",
+  "content": {
+    "text": "As a registered user, I want to reset my password so that I can regain access to my account.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 40, "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

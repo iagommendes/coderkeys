@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-surface: #0f1419;
+  --color-surface-elevated: #1a2332;
+  --color-border: #2d3a4f;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-muted: #94a3b8;
+  --color-foreground: #e2e8f0;
+}
+
+body {
+  @apply m-0 min-h-screen bg-surface font-sans text-foreground antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}

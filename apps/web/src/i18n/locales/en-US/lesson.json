@@ -1,0 +1,12 @@
+{
+  "liveWpm": "WPM",
+  "liveAccuracy": "Accuracy",
+  "liveAwpm": "AWPM",
+  "elapsed": "Time",
+  "completeTitle": "Lesson complete!",
+  "completeSubtitle": "Great job. Your results have been saved locally.",
+  "goalMet": "Goal met",
+  "goalMissed": "Keep practicing",
+  "pressToStart": "Click here or press any key to start",
+  "strictModeHint": "Strict mode: errors block progress"
+}

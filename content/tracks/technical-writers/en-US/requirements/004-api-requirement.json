@@ -1,0 +1,21 @@
+{
+  "id": "004-api-requirement",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "API Requirement",
+  "description": "Write technical API requirement descriptions.",
+  "difficulty": 3,
+  "estimatedMinutes": 3,
+  "skills": ["api-docs", "requirements"],
+  "tags": ["api", "rest"],
+  "mode": "prose",
+  "content": {
+    "text": "The endpoint must return a JSON payload with status code 200 and include the fields id, name, and createdAt in ISO 8601 format.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 35, "minAccuracy": 93 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

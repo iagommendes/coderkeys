@@ -1,0 +1,21 @@
+{
+  "id": "004-requisito-api",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Requisito de API",
+  "description": "Escreva descrições técnicas de requisitos de API.",
+  "difficulty": 3,
+  "estimatedMinutes": 3,
+  "skills": ["api-docs", "requirements"],
+  "tags": ["api", "rest"],
+  "mode": "prose",
+  "content": {
+    "text": "O endpoint deve retornar um payload JSON com código de status 200 e incluir os campos id, nome e criadoEm no formato ISO 8601.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 35, "minAccuracy": 93 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

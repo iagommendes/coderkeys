@@ -1,0 +1,23 @@
+{
+  "id": "004-template-literals",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "en-US",
+  "title": "Template Literals",
+  "description": "Type template strings with embedded expressions.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["template-literals", "interpolation"],
+  "tags": ["javascript", "es6"],
+  "mode": "code",
+  "content": {
+    "text": "const name = 'Coder';\nconst msg = `Hello, ${name}!`;\nconst path = `/api/users/${id}`;",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": { "minWpm": 28, "minAccuracy": 90 },
+  "hints": { "keyboard": ["`", "${", "}"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

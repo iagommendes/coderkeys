@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "tracks": [
+    {
+      "id": "programmers",
+      "icon": "code",
+      "modules": [
+        {
+          "id": "syntax-brackets",
+          "skills": ["brackets", "symbols", "curly-braces"],
+          "lessons": {
+            "en-US": [
+              "001-curly-basics",
+              "002-array-brackets",
+              "003-pipe-chain",
+              "004-template-literals",
+              "005-arrow-functions"
+            ],
+            "pt-BR": [
+              "001-chaves-basico",
+              "002-colchetes-array",
+              "003-cadeia-pipe",
+              "004-template-literals",
+              "005-arrow-functions"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "technical-writers",
+      "icon": "document",
+      "modules": [
+        {
+          "id": "requirements",
+          "skills": ["user-stories", "acceptance-criteria"],
+          "lessons": {
+            "en-US": [
+              "001-user-story",
+              "002-acceptance-criteria",
+              "003-given-when-then",
+              "004-api-requirement",
+              "005-edge-case"
+            ],
+            "pt-BR": [
+              "001-historia-usuario",
+              "002-criterios-aceite",
+              "003-dado-quando-entao",
+              "004-requisito-api",
+              "005-caso-limite"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

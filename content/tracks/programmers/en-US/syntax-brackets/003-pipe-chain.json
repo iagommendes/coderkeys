@@ -1,0 +1,23 @@
+{
+  "id": "003-pipe-chain",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "en-US",
+  "title": "Pipe and Chain",
+  "description": "Practice method chaining and pipe operators.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["method-chaining", "pipes"],
+  "tags": ["typescript", "rxjs"],
+  "mode": "code",
+  "content": {
+    "text": "const result = data\n  .filter((x) => x.active)\n  .map((x) => x.name)\n  .join(', ');",
+    "display": "code",
+    "language": "typescript"
+  },
+  "goals": { "minWpm": 30, "minAccuracy": 88 },
+  "hints": { "keyboard": [".", "(", ")"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

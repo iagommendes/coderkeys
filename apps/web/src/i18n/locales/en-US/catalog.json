@@ -1,0 +1,11 @@
+{
+  "title": "Lesson Catalog",
+  "subtitle": "Choose a track and module to start practicing",
+  "modules": "Modules",
+  "lessons": "Lessons",
+  "noLessons": "No lessons available for this language yet.",
+  "bestWpm": "Best WPM",
+  "attempts": "Attempts",
+  "completed": "Completed",
+  "notStarted": "Not started"
+}

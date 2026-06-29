@@ -1,0 +1,21 @@
+{
+  "id": "003-dado-quando-entao",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Dado-Quando-Então",
+  "description": "Pratique formatação de requisitos no estilo BDD.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["given-when-then", "bdd"],
+  "tags": ["bdd"],
+  "mode": "prose",
+  "content": {
+    "text": "Dado um carrinho de compras vazio, quando o usuário adicionar um produto, então o total do carrinho deve ser atualizado imediatamente.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 38, "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}
