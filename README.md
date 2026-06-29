@@ -55,8 +55,10 @@ coderkeys/
 ├── packages/schemas/   # Zod schemas for lessons and progress
 ├── content/            # Lesson content (contributors edit here)
 ├── src-tauri/          # Tauri 2 desktop wrapper
-└── docs/               # Architecture and planning docs
+└── docs/               # Architecture, planning, and roadmap docs
 ```
+
+See [docs/ROADMAP.md](docs/ROADMAP.md) for the post-Phase 3 improvement plan.
 
 ## Contributing Lessons
 
