@@ -1,0 +1,32 @@
+{
+  "name": "coderkeys",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Open-source, local-first typing tutor for programmers and technical writers",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pnpm --filter @coderkeys/schemas build && pnpm --filter @coderkeys/engine build && pnpm --filter @coderkeys/web dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm --filter @coderkeys/schemas build && pnpm --filter @coderkeys/engine build && pnpm -r typecheck",
+    "validate-content": "pnpm --filter @coderkeys/schemas build && tsx scripts/validate-content.ts",
+    "check-i18n": "tsx scripts/check-i18n-keys.ts"
+  },
+  "devDependencies": {
+    "@coderkeys/schemas": "workspace:*",
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20"
+  }
+}

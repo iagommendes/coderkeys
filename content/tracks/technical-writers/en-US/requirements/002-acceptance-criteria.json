@@ -1,0 +1,21 @@
+{
+  "id": "002-acceptance-criteria",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Acceptance Criteria",
+  "description": "Type clear acceptance criteria for feature requirements.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["acceptance-criteria"],
+  "tags": ["agile"],
+  "mode": "prose",
+  "content": {
+    "text": "Given the user is on the login page, when they enter valid credentials, then they should be redirected to the dashboard.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 38, "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

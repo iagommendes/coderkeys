@@ -1,0 +1,21 @@
+{
+  "id": "003-given-when-then",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Given-When-Then",
+  "description": "Practice BDD-style requirement formatting.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["given-when-then", "bdd"],
+  "tags": ["bdd"],
+  "mode": "prose",
+  "content": {
+    "text": "Given an empty shopping cart, when the user adds a product, then the cart total should update immediately.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 38, "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "id": "002-criterios-aceite",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Critérios de Aceite",
+  "description": "Digite critérios de aceite claros para requisitos de funcionalidades.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["acceptance-criteria"],
+  "tags": ["agile"],
+  "mode": "prose",
+  "content": {
+    "text": "Dado que o usuário está na página de login, quando ele informar credenciais válidas, então deve ser redirecionado ao painel.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 38, "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

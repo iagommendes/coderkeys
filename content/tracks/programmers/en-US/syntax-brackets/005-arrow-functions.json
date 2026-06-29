@@ -1,0 +1,23 @@
+{
+  "id": "005-arrow-functions",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "en-US",
+  "title": "Arrow Functions",
+  "description": "Practice arrow function syntax and implicit returns.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["arrow-functions", "symbols"],
+  "tags": ["javascript", "typescript"],
+  "mode": "code",
+  "content": {
+    "text": "const add = (a, b) => a + b;\nconst greet = (name) => `Hi, ${name}`;\nitems.map((x) => x.id);",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": { "minWpm": 32, "minAccuracy": 90 },
+  "hints": { "keyboard": ["=>", "(", ")"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

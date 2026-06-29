@@ -1,0 +1,17 @@
+{
+  "appName": "CoderKeys",
+  "tagline": "Habilidades de digitação para programadores e escritores técnicos",
+  "nav": {
+    "catalog": "Catálogo",
+    "settings": "Configurações",
+    "github": "GitHub"
+  },
+  "actions": {
+    "start": "Iniciar",
+    "retry": "Tentar novamente",
+    "back": "Voltar",
+    "save": "Salvar"
+  },
+  "difficulty": "Dificuldade",
+  "minutes": "min"
+}

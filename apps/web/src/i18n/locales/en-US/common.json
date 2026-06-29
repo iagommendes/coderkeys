@@ -1,0 +1,17 @@
+{
+  "appName": "CoderKeys",
+  "tagline": "Typing skills for programmers and technical writers",
+  "nav": {
+    "catalog": "Catalog",
+    "settings": "Settings",
+    "github": "GitHub"
+  },
+  "actions": {
+    "start": "Start",
+    "retry": "Try again",
+    "back": "Back",
+    "save": "Save"
+  },
+  "difficulty": "Difficulty",
+  "minutes": "min"
+}

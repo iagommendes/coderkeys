@@ -1,0 +1,23 @@
+{
+  "id": "004-template-literals",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "pt-BR",
+  "title": "Template Literals",
+  "description": "Digite template strings com expressões embutidas.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["template-literals", "interpolation"],
+  "tags": ["javascript", "es6"],
+  "mode": "code",
+  "content": {
+    "text": "const nome = 'Coder';\nconst msg = `Ola, ${nome}!`;\nconst rota = `/api/usuarios/${id}`;",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": { "minWpm": 28, "minAccuracy": 90 },
+  "hints": { "keyboard": ["`", "${", "}"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "id": "002-array-brackets",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "en-US",
+  "title": "Array Brackets",
+  "description": "Type array literals and indexed access with square brackets.",
+  "difficulty": 1,
+  "estimatedMinutes": 2,
+  "skills": ["array-brackets", "indexing"],
+  "tags": ["javascript"],
+  "mode": "code",
+  "content": {
+    "text": "const items = ['a', 'b', 'c'];\nconst first = items[0];\nconst nested = [[1], [2]];",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": { "minWpm": 30, "minAccuracy": 90 },
+  "hints": { "keyboard": ["[", "]"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

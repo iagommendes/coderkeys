@@ -1,0 +1,9 @@
+{
+  "title": "Configurações",
+  "uiLocale": "Idioma da interface",
+  "contentLocale": "Idioma do conteúdo das lições",
+  "strictMode": "Modo rigoroso",
+  "strictModeDesc": "Bloquear digitação quando um caractere estiver incorreto",
+  "theme": "Tema",
+  "saved": "Configurações salvas"
+}

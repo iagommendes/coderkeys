@@ -1,0 +1,12 @@
+{
+  "id": "technical-writers",
+  "name": {
+    "en-US": "Technical Writers",
+    "pt-BR": "Escritores Técnicos"
+  },
+  "description": {
+    "en-US": "Practice technical writing, requirements, and documentation.",
+    "pt-BR": "Pratique escrita técnica, requisitos e documentação."
+  },
+  "defaultModule": "requirements"
+}

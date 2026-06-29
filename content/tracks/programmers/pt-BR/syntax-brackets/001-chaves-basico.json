@@ -1,0 +1,23 @@
+{
+  "id": "001-chaves-basico",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "pt-BR",
+  "title": "Chaves Básicas",
+  "description": "Pratique digitar chaves de abertura e fechamento em padrões comuns.",
+  "difficulty": 1,
+  "estimatedMinutes": 2,
+  "skills": ["curly-braces", "indentation"],
+  "tags": ["javascript", "typescript"],
+  "mode": "code",
+  "content": {
+    "text": "const obj = { chave: 'valor' };\nif (true) {\n  console.log('ola');\n}",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": { "minWpm": 25, "minAccuracy": 90 },
+  "hints": { "keyboard": ["{", "}"] },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

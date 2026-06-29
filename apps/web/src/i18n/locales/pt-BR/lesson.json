@@ -1,0 +1,12 @@
+{
+  "liveWpm": "PPM",
+  "liveAccuracy": "Precisão",
+  "liveAwpm": "PPM ajustado",
+  "elapsed": "Tempo",
+  "completeTitle": "Lição concluída!",
+  "completeSubtitle": "Ótimo trabalho. Seus resultados foram salvos localmente.",
+  "goalMet": "Meta atingida",
+  "goalMissed": "Continue praticando",
+  "pressToStart": "Clique aqui ou pressione qualquer tecla para começar",
+  "strictModeHint": "Modo rigoroso: erros bloqueiam o progresso"
+}

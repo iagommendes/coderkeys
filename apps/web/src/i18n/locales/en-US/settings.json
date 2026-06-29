@@ -1,0 +1,9 @@
+{
+  "title": "Settings",
+  "uiLocale": "Interface language",
+  "contentLocale": "Lesson content language",
+  "strictMode": "Strict mode",
+  "strictModeDesc": "Block typing when a character is incorrect",
+  "theme": "Theme",
+  "saved": "Settings saved"
+}

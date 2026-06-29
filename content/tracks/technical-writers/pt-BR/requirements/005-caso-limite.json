@@ -1,0 +1,21 @@
+{
+  "id": "005-caso-limite",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Documentação de Caso Limite",
+  "description": "Documente casos limite e requisitos de tratamento de erros.",
+  "difficulty": 3,
+  "estimatedMinutes": 3,
+  "skills": ["edge-cases", "requirements"],
+  "tags": ["documentation"],
+  "mode": "prose",
+  "content": {
+    "text": "Se o upload exceder o limite de 10 MB, o sistema deve rejeitar o arquivo e exibir uma mensagem de erro sem armazenamento parcial.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 35, "minAccuracy": 93 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

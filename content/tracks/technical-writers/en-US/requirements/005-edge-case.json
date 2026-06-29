@@ -1,0 +1,21 @@
+{
+  "id": "005-edge-case",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Edge Case Documentation",
+  "description": "Document edge cases and error handling requirements.",
+  "difficulty": 3,
+  "estimatedMinutes": 3,
+  "skills": ["edge-cases", "requirements"],
+  "tags": ["documentation"],
+  "mode": "prose",
+  "content": {
+    "text": "If the upload exceeds the 10 MB limit, the system shall reject the file and display an error message without partial storage.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 35, "minAccuracy": 93 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

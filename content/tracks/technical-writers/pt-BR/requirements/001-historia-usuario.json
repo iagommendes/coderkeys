@@ -1,0 +1,21 @@
+{
+  "id": "001-historia-usuario",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Formato de História de Usuário",
+  "description": "Pratique digitar histórias de usuário no formato padrão.",
+  "difficulty": 1,
+  "estimatedMinutes": 2,
+  "skills": ["user-stories"],
+  "tags": ["agile", "requirements"],
+  "mode": "prose",
+  "content": {
+    "text": "Como usuário cadastrado, eu quero redefinir minha senha para recuperar o acesso à minha conta.",
+    "display": "prose"
+  },
+  "goals": { "minWpm": 40, "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}
