@@ -47,6 +47,8 @@ jobs:
 
       - run: pnpm --filter @coderkeys/schemas build && pnpm --filter @coderkeys/engine build
 
+      - run: pnpm build
+
       - run: pnpm --filter @coderkeys/web exec playwright install --with-deps chromium
 
       - run: pnpm test:e2e
