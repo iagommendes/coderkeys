@@ -23,6 +23,14 @@ export function Header() {
             {t('nav.catalog')}
           </NavLink>
           <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              cn('text-muted transition hover:text-foreground', isActive && 'text-accent')
+            }
+          >
+            {t('nav.dashboard')}
+          </NavLink>
+          <NavLink
             to="/settings"
             className={({ isActive }) =>
               cn('text-muted transition hover:text-foreground', isActive && 'text-accent')

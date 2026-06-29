@@ -1,0 +1,22 @@
+{
+  "id": "003-error-message",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Error Message",
+  "description": "Translate an error message for end users.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": ["translation", "ux-writing"],
+  "mode": "translation",
+  "content": {
+    "text": "Your session has expired. Please sign in again to continue.",
+    "sourceText": "Sua sessão expirou. Faça login novamente para continuar.",
+    "display": "prose",
+    "language": "en-US"
+  },
+  "goals": { "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,10 +1,14 @@
-import { useEffect, useReducer, useRef } from 'react';
+import { useCallback, useEffect, useReducer, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { TypingSession } from '@coderkeys/engine';
+import { TypingSession, calculateWordAccuracy } from '@coderkeys/engine';
 import type { Lesson } from '@coderkeys/schemas';
 import { saveSessionResult } from '@/db/repositories/progress.repo';
 import { useSettingsStore } from '@/shared/stores/settings.store';
+import { useKeySound } from '@/shared/hooks/useKeySound';
+import { useInterval } from '@/shared/hooks/useInterval';
 import { CharDisplay } from './CharDisplay';
+import { CodePreview } from './CodePreview';
+import { TranslationPanel } from './TranslationPanel';
 import { Button, Card } from '@/shared/components/ui';
 import { buildLessonId } from '@/features/catalog/lesson-loader';
 
@@ -23,25 +27,38 @@ function formatTime(ms: number): string {
 export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
   const { t } = useTranslation('lesson');
   const strictMode = useSettingsStore((s) => s.strictMode);
+  const playKeySound = useKeySound();
   const inputRef = useRef<HTMLInputElement>(null);
   const sessionRef = useRef<TypingSession | null>(null);
   const savedRef = useRef(false);
   const [, forceRender] = useReducer((x: number) => x + 1, 0);
 
-  useEffect(() => {
+  const resetSession = useCallback(() => {
     sessionRef.current = new TypingSession({
       passage: lesson.content.text,
       strictMode,
     });
     sessionRef.current.prepare();
-    inputRef.current?.focus();
     savedRef.current = false;
+    inputRef.current?.focus();
+    forceRender();
   }, [lesson, strictMode]);
+
+  useEffect(() => {
+    resetSession();
+  }, [resetSession]);
 
   const session = sessionRef.current;
   const state = session?.getState();
   const metrics = session?.getLiveMetrics();
   const isComplete = state?.status === 'complete';
+  const isPaused = state?.status === 'paused';
+  const isActive = state?.status === 'active' || state?.status === 'ready';
+
+  useInterval(
+    () => forceRender(),
+    isActive && !isPaused ? 200 : null,
+  );
 
   useEffect(() => {
     if (!isComplete || !session || savedRef.current) return;
@@ -53,8 +70,32 @@ export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
     void saveSessionResult(lessonId, lesson.track, lesson.module, result);
   }, [isComplete, lesson, session]);
 
+  const wordAccuracy =
+    lesson.mode === 'translation' && state
+      ? calculateWordAccuracy(lesson.content.text, state.input)
+      : null;
+
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (!session) return;
+
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      if (state?.status === 'active') {
+        session.pause();
+      } else if (state?.status === 'paused') {
+        session.resume();
+        inputRef.current?.focus();
+      }
+      forceRender();
+      return;
+    }
+
+    if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
+      event.preventDefault();
+      resetSession();
+      return;
+    }
+
     if (event.ctrlKey || event.metaKey || event.altKey) return;
     if (event.key === 'Tab') return;
 
@@ -64,8 +105,11 @@ export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
       session.start();
     }
 
+    if (state?.status === 'paused') return;
+
     const handled = session.handleKey(event.key);
     if (handled) {
+      playKeySound();
       forceRender();
     }
   };
@@ -78,6 +122,8 @@ export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
 
   if (isComplete && session) {
     const result = session.getResult();
+    const finalWordAccuracy = calculateWordAccuracy(lesson.content.text, state?.input ?? '');
+
     return (
       <Card className="space-y-6 text-center">
         <div>
@@ -92,12 +138,18 @@ export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
           <Stat label={t('elapsed')} value={formatTime(result.durationMs)} />
         </div>
 
+        {lesson.mode === 'translation' && (
+          <p className="text-sm text-muted">
+            {t('wordAccuracy')}: {finalWordAccuracy}%
+          </p>
+        )}
+
         <p className={goalMet ? 'text-success' : 'text-muted'}>
           {goalMet ? t('goalMet') : t('goalMissed')}
         </p>
 
         <div className="flex justify-center gap-3">
-          <Button onClick={() => window.location.reload()}>{t('actions.retry', { ns: 'common' })}</Button>
+          <Button onClick={resetSession}>{t('actions.retry', { ns: 'common' })}</Button>
           <Button variant="secondary" onClick={onComplete}>
             {t('actions.back', { ns: 'common' })}
           </Button>
@@ -108,24 +160,45 @@ export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
         <Stat label={t('liveWpm')} value={String(metrics?.wpm ?? 0)} />
         <Stat label={t('liveAccuracy')} value={`${metrics?.accuracy ?? 100}%`} />
         <Stat label={t('elapsed')} value={formatTime(metrics?.elapsedMs ?? 0)} />
+        {wordAccuracy !== null && (
+          <Stat label={t('wordAccuracy')} value={`${wordAccuracy}%`} />
+        )}
       </div>
 
+      {isPaused && (
+        <Card className="border-accent/50 bg-accent/10 text-center text-sm">
+          {t('paused')} — {t('pressEscToResume')}
+        </Card>
+      )}
+
       {strictMode && <p className="text-sm text-muted">{t('strictModeHint')}</p>}
+      <p className="text-xs text-muted">{t('shortcuts')}</p>
+
+      {lesson.mode === 'translation' && lesson.content.sourceText && (
+        <TranslationPanel sourceText={lesson.content.sourceText} />
+      )}
 
       <div
         className="cursor-text"
         onClick={() => inputRef.current?.focus()}
         role="presentation"
       >
+        {lesson.content.display === 'code' && state?.status === 'ready' && (
+          <div className="mb-4">
+            <CodePreview code={lesson.content.text} language={lesson.content.language} />
+          </div>
+        )}
+
         <CharDisplay
           passage={lesson.content.text}
           input={state?.input ?? ''}
           display={lesson.content.display}
         />
+
         {state?.status === 'ready' && (
           <p className="mt-3 text-center text-sm text-muted">{t('pressToStart')}</p>
         )}

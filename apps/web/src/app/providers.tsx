@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/shared/stores/settings.store';
+import { ThemeProvider } from './ThemeProvider';
 import '@/i18n';
 
 export function AppProviders({ children }: { children: React.ReactNode }) {
@@ -25,5 +26,5 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
     );
   }
 
-  return <>{children}</>;
+  return <ThemeProvider>{children}</ThemeProvider>;
 }

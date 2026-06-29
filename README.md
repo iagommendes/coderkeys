@@ -4,9 +4,12 @@ Open-source, local-first typing tutor tailored for **programmers** and **technic
 
 ## Features
 
-- **Skill-based tracks** — Programmers (code syntax, symbols) and Technical Writers (requirements, documentation)
+- **Skill-based tracks** — Programmers (code syntax, symbols) and Technical Writers (requirements, documentation, translation)
 - **Bilingual** — Interface and lessons in `en-US` and `pt-BR`
+- **Progress dashboard** — WPM charts, error heatmap, lesson suggestions
+- **Translation mode** — Practice bilingual technical writing
 - **100% local** — No backend, no cloud costs; progress saved in IndexedDB
+- **PWA** — Installable and works offline after first load
 - **Contributor-friendly** — Add lessons by creating JSON files in `content/`
 
 ## Quick Start

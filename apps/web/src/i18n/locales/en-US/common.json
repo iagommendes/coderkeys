@@ -3,6 +3,7 @@
   "tagline": "Typing skills for programmers and technical writers",
   "nav": {
     "catalog": "Catalog",
+    "dashboard": "Dashboard",
     "settings": "Settings",
     "github": "GitHub"
   },

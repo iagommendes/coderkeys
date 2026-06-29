@@ -1,0 +1,22 @@
+{
+  "id": "004-onboarding-step",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Onboarding Step",
+  "description": "Translate onboarding copy for a developer tool.",
+  "difficulty": 3,
+  "estimatedMinutes": 3,
+  "skills": ["translation", "documentation"],
+  "mode": "translation",
+  "content": {
+    "text": "Connect your repository to enable automatic deployments on every push to the main branch.",
+    "sourceText": "Conecte seu repositório para habilitar deploys automáticos a cada push na branch principal.",
+    "display": "prose",
+    "language": "en-US"
+  },
+  "goals": { "minAccuracy": 92 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

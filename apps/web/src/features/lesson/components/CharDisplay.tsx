@@ -13,7 +13,7 @@ export function CharDisplay({ passage, input, display }: CharDisplayProps) {
   return (
     <div
       className={cn(
-        'rounded-xl border border-border bg-surface p-6 leading-relaxed',
+        'rounded-xl border border-border bg-surface p-6 leading-relaxed transition-colors',
         display === 'code' ? 'font-mono text-sm whitespace-pre-wrap' : 'text-base',
       )}
       aria-label="Lesson text"
@@ -22,10 +22,10 @@ export function CharDisplay({ passage, input, display }: CharDisplayProps) {
         <span
           key={`${index}-${state.char}`}
           className={cn(
-            'rounded-sm',
+            'rounded-sm transition-colors duration-75',
             state.status === 'correct' && 'text-success',
             state.status === 'incorrect' && 'bg-error/20 text-error underline decoration-error',
-            state.status === 'current' && 'bg-accent/30 text-foreground',
+            state.status === 'current' && 'char-current bg-accent/30 text-foreground',
             state.status === 'pending' && 'text-muted',
           )}
         >

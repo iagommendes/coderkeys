@@ -50,6 +50,26 @@
               "005-caso-limite"
             ]
           }
+        },
+        {
+          "id": "translation",
+          "skills": ["translation", "bilingual"],
+          "lessons": {
+            "en-US": [
+              "001-password-reset",
+              "002-feature-request",
+              "003-error-message",
+              "004-onboarding-step",
+              "005-commit-message"
+            ],
+            "pt-BR": [
+              "001-redefinir-senha",
+              "002-pedido-funcionalidade",
+              "003-mensagem-erro",
+              "004-passo-onboarding",
+              "005-mensagem-commit"
+            ]
+          }
         }
       ]
     }

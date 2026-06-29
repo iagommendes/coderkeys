@@ -8,5 +8,10 @@
   "goalMet": "Meta atingida",
   "goalMissed": "Continue praticando",
   "pressToStart": "Clique aqui ou pressione qualquer tecla para começar",
-  "strictModeHint": "Modo rigoroso: erros bloqueiam o progresso"
+  "strictModeHint": "Modo rigoroso: erros bloqueiam o progresso",
+  "sourceText": "Texto fonte",
+  "wordAccuracy": "Precisão por palavra",
+  "paused": "Pausado",
+  "pressEscToResume": "Pressione Esc para continuar",
+  "shortcuts": "Esc: pausar · Ctrl+Enter: reiniciar"
 }

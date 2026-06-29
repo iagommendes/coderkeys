@@ -82,3 +82,17 @@ export function getLessonsForModule(trackId: string, moduleId: string, locale: L
 export function buildLessonId(trackId: string, moduleId: string, locale: Locale, fileSlug: string): string {
   return `${trackId}/${moduleId}/${locale}/${fileSlug}`;
 }
+
+export function getLessonCandidates(locale: Locale) {
+  return getAllLessons()
+    .filter((l) => l.locale === locale)
+    .map((l) => ({
+      lessonId: buildLessonId(l.track, l.module, l.locale, l.id),
+      title: l.title,
+      skills: l.skills,
+      difficulty: l.difficulty,
+      keyboardHints: l.hints?.keyboard,
+      track: l.track,
+      module: l.module,
+    }));
+}
