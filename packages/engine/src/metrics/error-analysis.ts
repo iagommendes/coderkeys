@@ -176,7 +176,7 @@ export function calculateDayStreak(sessionDates: string[]): number {
   const uniqueDays = [...new Set(sessionDates.map((d) => d.slice(0, 10)))].sort().reverse();
   const today = new Date();
   let streak = 0;
-  let checkDate = new Date(today);
+  const checkDate = new Date(today);
 
   for (let i = 0; i < uniqueDays.length + 1; i++) {
     const dayStr = checkDate.toISOString().slice(0, 10);
