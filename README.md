@@ -1,5 +1,9 @@
 # CoderKeys
 
+[![CI](https://github.com/iagommendes/coderkeys/actions/workflows/ci.yml/badge.svg)](https://github.com/iagommendes/coderkeys/actions/workflows/ci.yml)
+[![Deploy](https://github.com/iagommendes/coderkeys/actions/workflows/deploy.yml/badge.svg)](https://github.com/iagommendes/coderkeys/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/demo-GitHub%20Pages-blue)](https://iagommendes.github.io/coderkeys/)
+
 Open-source, local-first typing tutor tailored for **programmers** and **technical writers** to master code syntax and real-world vocabularies.
 
 ## Features
@@ -24,6 +28,8 @@ pnpm dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+**Live demo:** [https://iagommendes.github.io/coderkeys/](https://iagommendes.github.io/coderkeys/)
 
 ### Other commands
 

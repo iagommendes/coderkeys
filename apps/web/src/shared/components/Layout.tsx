@@ -17,7 +17,10 @@ export function Header() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              cn('text-muted transition hover:text-foreground', isActive && 'text-accent')
+              cn(
+                'text-muted transition hover:text-foreground',
+                isActive && 'font-semibold text-foreground',
+              )
             }
           >
             {t('nav.catalog')}
@@ -25,7 +28,10 @@ export function Header() {
           <NavLink
             to="/dashboard"
             className={({ isActive }) =>
-              cn('text-muted transition hover:text-foreground', isActive && 'text-accent')
+              cn(
+                'text-muted transition hover:text-foreground',
+                isActive && 'font-semibold text-foreground',
+              )
             }
           >
             {t('nav.dashboard')}
@@ -33,7 +39,10 @@ export function Header() {
           <NavLink
             to="/settings"
             className={({ isActive }) =>
-              cn('text-muted transition hover:text-foreground', isActive && 'text-accent')
+              cn(
+                'text-muted transition hover:text-foreground',
+                isActive && 'font-semibold text-foreground',
+              )
             }
           >
             {t('nav.settings')}
