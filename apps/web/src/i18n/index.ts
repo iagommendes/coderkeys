@@ -14,6 +14,12 @@ import ptLesson from './locales/pt-BR/lesson.json';
 import ptSettings from './locales/pt-BR/settings.json';
 import ptDashboard from './locales/pt-BR/dashboard.json';
 
+import esCommon from './locales/es-ES/common.json';
+import esCatalog from './locales/es-ES/catalog.json';
+import esLesson from './locales/es-ES/lesson.json';
+import esSettings from './locales/es-ES/settings.json';
+import esDashboard from './locales/es-ES/dashboard.json';
+
 void i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -33,9 +39,16 @@ void i18n
         settings: ptSettings,
         dashboard: ptDashboard,
       },
+      'es-ES': {
+        common: esCommon,
+        catalog: esCatalog,
+        lesson: esLesson,
+        settings: esSettings,
+        dashboard: esDashboard,
+      },
     },
     fallbackLng: 'en-US',
-    supportedLngs: ['en-US', 'pt-BR'],
+    supportedLngs: ['en-US', 'pt-BR', 'es-ES'],
     defaultNS: 'common',
     ns: ['common', 'catalog', 'lesson', 'settings', 'dashboard'],
     interpolation: { escapeValue: false },

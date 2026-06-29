@@ -2,11 +2,13 @@
   "id": "programmers",
   "name": {
     "en-US": "Programmers",
-    "pt-BR": "Programadores"
+    "pt-BR": "Programadores",
+    "es-ES": "Programadores"
   },
   "description": {
     "en-US": "Master code syntax, symbols, and common patterns.",
-    "pt-BR": "Domine sintaxe de código, símbolos e padrões comuns."
+    "pt-BR": "Domine sintaxe de código, símbolos e padrões comuns.",
+    "es-ES": "Domina sintaxis de código, símbolos y patrones comunes."
   },
   "defaultModule": "syntax-brackets"
 }

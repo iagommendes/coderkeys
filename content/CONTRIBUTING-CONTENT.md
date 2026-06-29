@@ -33,7 +33,10 @@ Before opening a PR:
 
 ```bash
 pnpm validate-content
+pnpm check-i18n
 ```
+
+See also [docs/ADDING-TRACK.md](../docs/ADDING-TRACK.md) for proposing new tracks and [docs/ADDING-LOCALE.md](../docs/ADDING-LOCALE.md) for new languages.
 
 ## Guidelines
 

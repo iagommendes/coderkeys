@@ -1,0 +1,26 @@
+{
+  "id": "004-terraform-plan",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "en-US",
+  "title": "Terraform Plan",
+  "description": "Type terraform workflow commands.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "terraform",
+    "iac"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "terraform init\nterraform plan -var-file=prod.tfvars",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "id": "001-clausula-contrato",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Cláusula Contratual",
+  "description": "Digite cláusulas padrão de limitação de responsabilidade.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "contracts"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "As partes concordam que a responsabilidade será limitada a danos diretos decorrentes de violação material deste contrato.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

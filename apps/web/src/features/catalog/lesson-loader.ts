@@ -30,13 +30,13 @@ function parseLessonPath(path: string): LessonRef | null {
   if (!match) return null;
 
   const [, trackId, locale, moduleId, fileSlug] = match;
-  if (locale !== 'en-US' && locale !== 'pt-BR') return null;
+  if (!['en-US', 'pt-BR', 'es-ES'].includes(locale)) return null;
 
   return {
     lessonId: `${trackId}/${moduleId}/${locale}/${fileSlug}`,
     trackId,
     moduleId,
-    locale,
+    locale: locale as Locale,
     fileSlug,
   };
 }

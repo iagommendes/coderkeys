@@ -1,0 +1,25 @@
+{
+  "id": "005-ip-term",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "IP Term",
+  "description": "Type intellectual property terminology.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "ip"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Licensee shall not sublicense, assign, or transfer any rights granted under this intellectual property agreement.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

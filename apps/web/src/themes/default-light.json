@@ -1,0 +1,17 @@
+{
+  "id": "default-light",
+  "name": "CoderKeys Light",
+  "author": "coderkeys-team",
+  "description": "Default light theme",
+  "colors": {
+    "surface": "#f8fafc",
+    "surfaceElevated": "#ffffff",
+    "border": "#e2e8f0",
+    "accent": "#2563eb",
+    "accentHover": "#1d4ed8",
+    "success": "#16a34a",
+    "error": "#dc2626",
+    "muted": "#64748b",
+    "foreground": "#0f172a"
+  }
+}

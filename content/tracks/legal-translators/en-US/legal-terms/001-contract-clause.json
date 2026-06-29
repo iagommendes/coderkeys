@@ -1,0 +1,25 @@
+{
+  "id": "001-contract-clause",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "Contract Clause",
+  "description": "Type standard contract limitation clauses.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "contracts"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "The parties agree that liability shall be limited to direct damages arising from material breach of this agreement.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

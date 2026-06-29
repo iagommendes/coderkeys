@@ -1,0 +1,14 @@
+{
+  "id": "legal-translators",
+  "name": {
+    "en-US": "Legal Translators",
+    "pt-BR": "Tradutores Jurídicos",
+    "es-ES": "Traductores Jurídicos"
+  },
+  "description": {
+    "en-US": "Practice bilingual legal and notarial vocabulary.",
+    "pt-BR": "Pratique vocabulário jurídico e cartorário bilíngue.",
+    "es-ES": "Practica vocabulario jurídico y notarial bilingüe."
+  },
+  "defaultModule": "legal-terms"
+}

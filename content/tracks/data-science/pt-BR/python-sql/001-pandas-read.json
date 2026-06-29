@@ -1,0 +1,26 @@
+{
+  "id": "001-pandas-read",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "Pandas Read CSV",
+  "description": "Digite snippets de carregamento com pandas.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "pandas",
+    "python"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "import pandas as pd\ndf = pd.read_csv('dados.csv', parse_dates=['criado_em'])",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

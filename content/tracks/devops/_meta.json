@@ -1,0 +1,14 @@
+{
+  "id": "devops",
+  "name": {
+    "en-US": "DevOps",
+    "pt-BR": "DevOps",
+    "es-ES": "DevOps"
+  },
+  "description": {
+    "en-US": "Practice Docker, Kubernetes, Terraform, and shell commands.",
+    "pt-BR": "Pratique Docker, Kubernetes, Terraform e comandos shell.",
+    "es-ES": "Practica Docker, Kubernetes, Terraform y comandos shell."
+  },
+  "defaultModule": "docker-cli"
+}

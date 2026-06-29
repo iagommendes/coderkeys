@@ -1,0 +1,26 @@
+{
+  "id": "005-matplotlib-plot",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "en-US",
+  "title": "Matplotlib Plot",
+  "description": "Type matplotlib plotting code.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "matplotlib",
+    "visualization"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "import matplotlib.pyplot as plt\nplt.plot(x, y, label='trend')\nplt.legend()",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

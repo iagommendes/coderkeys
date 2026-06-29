@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
     "test": "vitest run --passWithNoTests",
+    "test:e2e": "playwright test",
     "lint": "eslint src"
   },
   "dependencies": {
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@codemirror/lang-javascript": "^6.2.3",
+    "@playwright/test": "^1.51.1",
     "@codemirror/lang-json": "^6.0.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@codemirror/view": "^6.36.4",

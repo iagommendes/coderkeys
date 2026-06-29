@@ -29,7 +29,17 @@ export function CatalogPage() {
             <Link key={track.id} to={`/tracks/${track.id}`}>
               <Card className="h-full transition hover:border-accent/50 hover:shadow-md">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">{track.icon === 'code' ? '💻' : '📝'}</span>
+                  <span className="text-2xl">
+                    {track.icon === 'code'
+                      ? '💻'
+                      : track.icon === 'terminal'
+                        ? '🖥️'
+                        : track.icon === 'chart'
+                          ? '📊'
+                          : track.icon === 'scale'
+                            ? '⚖️'
+                            : '📝'}
+                  </span>
                   <div>
                     <h2 className="text-lg font-semibold">{meta.name[contentLocale]}</h2>
                     <p className="mt-1 text-sm text-muted">{meta.description[contentLocale]}</p>

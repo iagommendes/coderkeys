@@ -1,0 +1,26 @@
+{
+  "id": "002-sql-select",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "en-US",
+  "title": "SQL Select",
+  "description": "Practice SQL aggregation queries.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "sql",
+    "analytics"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "SELECT user_id, COUNT(*) AS events\nFROM analytics.events\nGROUP BY user_id;",
+    "display": "code",
+    "language": "sql"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

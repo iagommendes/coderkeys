@@ -1,0 +1,76 @@
+name: New lesson proposal
+description: Propose a new typing lesson for an existing track
+title: "[Lesson] "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a lesson! See [CONTRIBUTING-CONTENT.md](https://github.com/iagommendes/coderkeys/blob/main/content/CONTRIBUTING-CONTENT.md) for the file format.
+
+  - type: dropdown
+    id: track
+    attributes:
+      label: Track
+      options:
+        - programmers
+        - technical-writers
+        - devops
+        - data-science
+        - legal-translators
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      description: e.g. syntax-brackets, docker-cli
+    validations:
+      required: true
+
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Locale
+      options:
+        - en-US
+        - pt-BR
+        - es-ES
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Lesson title
+    validations:
+      required: true
+
+  - type: textarea
+    id: text
+    attributes:
+      label: Text to type
+      description: The exact passage users will practice (min 20 characters)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - code
+        - prose
+        - translation
+    validations:
+      required: true
+
+  - type: input
+    id: difficulty
+    attributes:
+      label: Difficulty (1-5)
+      placeholder: "3"
+    validations:
+      required: true

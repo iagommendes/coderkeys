@@ -1,0 +1,33 @@
+name: New locale request
+description: Request or offer a new UI or content language
+title: "[Locale] "
+labels: ["i18n"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See [docs/ADDING-LOCALE.md](https://github.com/iagommendes/coderkeys/blob/main/docs/ADDING-LOCALE.md) for implementation steps.
+
+  - type: input
+    id: locale
+    attributes:
+      label: Locale code
+      description: e.g. es-ES, fr-FR, de-DE
+      placeholder: es-ES
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: UI translation (interface strings)
+        - label: Lesson content translation
+        - label: I can contribute the translations myself
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Why this locale matters, RTL requirements, etc.

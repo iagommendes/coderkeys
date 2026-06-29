@@ -1,0 +1,25 @@
+{
+  "id": "002-privacy-term",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "Privacy Term",
+  "description": "Practice privacy policy vocabulary.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "privacy"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Personal data shall be processed lawfully, fairly, and in a transparent manner in relation to the data subject.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

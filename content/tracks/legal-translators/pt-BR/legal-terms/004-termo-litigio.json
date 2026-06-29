@@ -1,0 +1,25 @@
+{
+  "id": "004-termo-litigio",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Termo de Litígio",
+  "description": "Pratique vocabulário processual e forense.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "litigation"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "O autor requer julgamento antecipado sob o fundamento de inexistência de controvérsia sobre fato relevante.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

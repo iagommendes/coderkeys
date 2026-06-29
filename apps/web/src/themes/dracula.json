@@ -1,0 +1,17 @@
+{
+  "id": "dracula",
+  "name": "Dracula",
+  "author": "community",
+  "description": "Dracula-inspired color palette",
+  "colors": {
+    "surface": "#282a36",
+    "surfaceElevated": "#343746",
+    "border": "#44475a",
+    "accent": "#bd93f9",
+    "accentHover": "#a679e8",
+    "success": "#50fa7b",
+    "error": "#ff5555",
+    "muted": "#6272a4",
+    "foreground": "#f8f8f2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "005-shell-pipeline",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "en-US",
+  "title": "Shell Pipeline",
+  "description": "Practice DevOps shell pipelines.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "shell",
+    "pipes"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "curl -s https://api.example.com/health | jq .status",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

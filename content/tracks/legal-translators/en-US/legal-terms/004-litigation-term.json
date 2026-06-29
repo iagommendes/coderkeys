@@ -1,0 +1,25 @@
+{
+  "id": "004-litigation-term",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "Litigation Term",
+  "description": "Practice litigation and court vocabulary.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "litigation"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Plaintiff moves this Court for summary judgment on the grounds that no genuine dispute of material fact exists.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const LocaleSchema = z.enum(['en-US', 'pt-BR']);
+export const LocaleSchema = z.enum(['en-US', 'pt-BR', 'es-ES']);
 
 export const LessonModeSchema = z.enum(['code', 'prose', 'translation']);
 

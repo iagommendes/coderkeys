@@ -9,3 +9,6 @@ coverage
 .env
 .env.*
 !.env.example
+test-results
+playwright-report
+src-tauri/target

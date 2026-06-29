@@ -1,0 +1,26 @@
+{
+  "id": "002-sql-select",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "SQL Select",
+  "description": "Pratique consultas SQL com agregação.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "sql",
+    "analytics"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "SELECT usuario_id, COUNT(*) AS eventos\nFROM analytics.eventos\nGROUP BY usuario_id;",
+    "display": "code",
+    "language": "sql"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "id": "005-termo-pi",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Termo de PI",
+  "description": "Digite terminologia de propriedade intelectual.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "ip"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "O licenciado não poderá sublicenciar, ceder ou transferir quaisquer direitos concedidos neste acordo de propriedade intelectual.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

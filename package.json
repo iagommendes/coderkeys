@@ -11,11 +11,17 @@
     "lint": "pnpm -r lint",
     "typecheck": "pnpm --filter @coderkeys/schemas build && pnpm --filter @coderkeys/engine build && pnpm -r typecheck",
     "validate-content": "pnpm --filter @coderkeys/schemas build && tsx scripts/validate-content.ts",
-    "check-i18n": "tsx scripts/check-i18n-keys.ts"
+    "check-i18n": "tsx scripts/check-i18n-keys.ts",
+    "content-preview": "pnpm --filter @coderkeys/schemas build && tsx scripts/content-preview.ts",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "test:e2e": "pnpm --filter @coderkeys/web test:e2e"
   },
   "devDependencies": {
     "@coderkeys/schemas": "workspace:*",
     "@eslint/js": "^9.22.0",
+    "@tauri-apps/cli": "^2.4.0",
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
