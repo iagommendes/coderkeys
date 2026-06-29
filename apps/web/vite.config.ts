@@ -1,8 +1,11 @@
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+
+const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [
@@ -34,14 +37,24 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@content': path.resolve(__dirname, '../../content'),
-      '@coderkeys/engine': path.resolve(__dirname, '../../packages/engine/src/index.ts'),
-      '@coderkeys/schemas': path.resolve(__dirname, '../../packages/schemas/src/index.ts'),
-    },
+    alias: [
+      {
+        find: '@coderkeys/engine',
+        replacement: path.resolve(rootDir, '../../packages/engine/src/index.ts'),
+      },
+      {
+        find: '@coderkeys/schemas',
+        replacement: path.resolve(rootDir, '../../packages/schemas/src/index.ts'),
+      },
+      {
+        find: '@content',
+        replacement: path.resolve(rootDir, '../../content'),
+      },
+      { find: '@', replacement: path.resolve(rootDir, 'src') },
+    ],
   },
   server: {
+    host: true,
     fs: {
       allow: ['..', '../..'],
     },
