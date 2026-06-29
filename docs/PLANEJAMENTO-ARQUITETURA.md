@@ -559,6 +559,10 @@ pnpm validate-content   # roda no CI em todo PR que toca content/
 
 ## 5. Roadmap de Implementação
 
+> **Status (2026-06):** Fases 1–3 **concluídas** (PRs [#2](https://github.com/iagommendes/coderkeys/pull/2)–[#4](https://github.com/iagommendes/coderkeys/pull/4)).  
+> **Sprint 4 em andamento:** deploy GitHub Pages, code splitting, Lighthouse CI, desktop multi-OS.  
+> Melhorias futuras: issues [#6](https://github.com/iagommendes/coderkeys/issues/6)–[#24](https://github.com/iagommendes/coderkeys/issues/24).
+
 ### Visão Geral das Fases
 
 ```
@@ -575,7 +579,7 @@ Fase 1 — Fundação          Fase 2 — Experiência        Fase 3 — Comunid
 
 ---
 
-### Fase 1 — Fundação (MVP)
+### Fase 1 — Fundação (MVP) ✅ Concluída
 
 **Objetivo:** Aplicação funcional que roda localmente, com uma lição jogável ponta a ponta e progresso persistido.
 
@@ -646,7 +650,7 @@ Fase 1 — Fundação          Fase 2 — Experiência        Fase 3 — Comunid
 
 ---
 
-### Fase 2 — Experiência e Retenção
+### Fase 2 — Experiência e Retenção ✅ Concluída
 
 **Objetivo:** Transformar o MVP em uma ferramenta de treino que o usuário quer usar diariamente.
 
@@ -700,9 +704,11 @@ Fase 1 — Fundação          Fase 2 — Experiência        Fase 3 — Comunid
 
 ---
 
-### Fase 3 — Comunidade e Escala
+### Fase 3 — Comunidade e Escala ✅ Concluída
 
 **Objetivo:** Infraestrutura para o projeto crescer organicamente via contribuições.
+
+**Pendências movidas para Sprint 4:** Lighthouse CI, desktop macOS/Windows, lições es-ES em conteúdo.
 
 #### 3.1 App Desktop (Tauri)
 
@@ -742,8 +748,16 @@ Fase 1 — Fundação          Fase 2 — Experiência        Fase 3 — Comunid
 - [ ] Testes E2E com Playwright (fluxo completo de lição)
 - [ ] Benchmark do engine (meta: < 1ms por keystroke)
 
-**Critério de conclusão da Fase 3:**
+**Critério de conclusão da Fase 3:** ✅ Atendido
 > Projeto pronto para anunciar como open source, com documentação de contribuição, app desktop, e pelo menos 50 lições em 2 idiomas.
+
+### Fase 4 — Polish & Launch (Sprint 4, em andamento)
+
+- [ ] GitHub Pages deploy
+- [ ] Code splitting e bundle otimizado
+- [ ] Lighthouse CI (Performance ≥ 90, Accessibility ≥ 95)
+- [ ] Desktop builds Linux + macOS + Windows
+- [ ] Documentação atualizada
 
 ---
 

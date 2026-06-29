@@ -1,10 +1,16 @@
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const rootDir = path.dirname(fileURLToPath(import.meta.url));
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const base = isGitHubPages ? '/coderkeys/' : '/';
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     tailwindcss(),
@@ -18,10 +24,10 @@ export default defineConfig({
         theme_color: '#0f1419',
         background_color: '#0f1419',
         display: 'standalone',
-        start_url: '/',
+        start_url: base,
         icons: [
           {
-            src: '/favicon.svg',
+            src: `${base}favicon.svg`,
             sizes: '192x192',
             type: 'image/svg+xml',
           },
@@ -34,14 +40,44 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@content': path.resolve(__dirname, '../../content'),
-      '@coderkeys/engine': path.resolve(__dirname, '../../packages/engine/src/index.ts'),
-      '@coderkeys/schemas': path.resolve(__dirname, '../../packages/schemas/src/index.ts'),
+    alias: [
+      {
+        find: '@coderkeys/engine',
+        replacement: path.resolve(rootDir, '../../packages/engine/src/index.ts'),
+      },
+      {
+        find: '@coderkeys/schemas',
+        replacement: path.resolve(rootDir, '../../packages/schemas/src/index.ts'),
+      },
+      {
+        find: '@content',
+        replacement: path.resolve(rootDir, '../../content'),
+      },
+      { find: '@', replacement: path.resolve(rootDir, 'src') },
+    ],
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/recharts') || id.includes('node_modules/d3-')) {
+            return 'recharts';
+          }
+          if (id.includes('node_modules/@codemirror')) {
+            return 'codemirror';
+          }
+          if (id.includes('node_modules/react-dom') || id.includes('node_modules/react/')) {
+            return 'react-vendor';
+          }
+          if (id.includes('node_modules/i18next') || id.includes('node_modules/react-i18next')) {
+            return 'i18n';
+          }
+        },
+      },
     },
   },
   server: {
+    host: true,
     fs: {
       allow: ['..', '../..'],
     },
