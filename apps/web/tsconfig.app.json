@@ -20,7 +20,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@content/*": ["../../content/*"]
+      "@content/*": ["../../content/*"],
+      "@coderkeys/engine": ["../../packages/engine/src/index.ts"],
+      "@coderkeys/schemas": ["../../packages/schemas/src/index.ts"]
     }
   },
   "include": ["src"]
