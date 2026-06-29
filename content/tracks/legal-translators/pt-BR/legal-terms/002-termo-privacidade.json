@@ -1,0 +1,25 @@
+{
+  "id": "002-termo-privacidade",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Termo de Privacidade",
+  "description": "Pratique vocabulário de política de privacidade.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "legal",
+    "privacy"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Os dados pessoais serão tratados de forma lícita, leal e transparente em relação ao titular dos dados.",
+    "display": "prose"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

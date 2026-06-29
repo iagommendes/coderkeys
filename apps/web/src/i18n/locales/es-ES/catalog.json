@@ -1,0 +1,11 @@
+{
+  "title": "Catálogo de lecciones",
+  "subtitle": "Elige una ruta y un módulo para empezar a practicar",
+  "modules": "Módulos",
+  "lessons": "Lecciones",
+  "noLessons": "Aún no hay lecciones disponibles para este idioma.",
+  "bestWpm": "Mejor PPM",
+  "attempts": "Intentos",
+  "completed": "Completada",
+  "notStarted": "Sin empezar"
+}

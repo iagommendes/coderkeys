@@ -1,0 +1,26 @@
+{
+  "id": "003-kubectl-get",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "en-US",
+  "title": "Kubectl Get",
+  "description": "Practice kubectl resource inspection commands.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "kubernetes",
+    "cli"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "kubectl get pods -n production -l app=api --watch",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

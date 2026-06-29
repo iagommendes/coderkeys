@@ -107,7 +107,10 @@ export function LessonSession({ lesson, onComplete }: LessonSessionProps) {
 
     if (state?.status === 'paused') return;
 
-    const handled = session.handleKey(event.key);
+    let key = event.key;
+    if (key === 'Enter') key = '\n';
+
+    const handled = session.handleKey(key);
     if (handled) {
       playKeySound();
       forceRender();

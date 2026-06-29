@@ -1,0 +1,26 @@
+{
+  "id": "004-numpy-array",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "NumPy Array",
+  "description": "Pratique criação de arrays NumPy.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "numpy",
+    "python"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "import numpy as np\narr = np.array([[1, 2], [3, 4]], dtype=float)",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "version": "2",
+  "identifier": "com.coderkeys.app",
+  "permissions": [
+    "core:default",
+    "shell:allow-open"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "002-docker-compose",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "pt-BR",
+  "title": "Docker Compose",
+  "description": "Digite definições de serviço docker-compose.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "docker",
+    "yaml"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "docker compose up -d --build\ndocker compose logs -f api",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

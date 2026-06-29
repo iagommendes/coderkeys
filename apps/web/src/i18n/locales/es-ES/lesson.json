@@ -1,0 +1,17 @@
+{
+  "liveWpm": "PPM",
+  "liveAccuracy": "Precisión",
+  "liveAwpm": "PPM ajustada",
+  "elapsed": "Tiempo",
+  "completeTitle": "¡Lección completada!",
+  "completeSubtitle": "Buen trabajo. Tus resultados se guardaron localmente.",
+  "goalMet": "Objetivo cumplido",
+  "goalMissed": "Sigue practicando",
+  "pressToStart": "Haz clic aquí o pulsa cualquier tecla para empezar",
+  "strictModeHint": "Modo estricto: los errores bloquean el progreso",
+  "sourceText": "Texto fuente",
+  "wordAccuracy": "Precisión por palabra",
+  "paused": "En pausa",
+  "pressEscToResume": "Pulsa Esc para continuar",
+  "shortcuts": "Esc: pausa · Ctrl+Enter: reiniciar"
+}

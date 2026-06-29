@@ -1,0 +1,14 @@
+{
+  "id": "data-science",
+  "name": {
+    "en-US": "Data Science",
+    "pt-BR": "Ciência de Dados",
+    "es-ES": "Ciencia de Datos"
+  },
+  "description": {
+    "en-US": "Practice Python, SQL, pandas, and data analysis snippets.",
+    "pt-BR": "Pratique Python, SQL, pandas e trechos de análise de dados.",
+    "es-ES": "Practica Python, SQL, pandas y fragmentos de análisis de datos."
+  },
+  "defaultModule": "python-sql"
+}

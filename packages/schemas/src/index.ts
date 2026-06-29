@@ -1,3 +1,7 @@
+export { ThemeColorsSchema, ThemeSchema, BuiltInThemeIdSchema } from './theme.schema';
+
+export type { Theme, BuiltInThemeId } from './theme.schema';
+
 export {
   LocaleSchema,
   LessonModeSchema,

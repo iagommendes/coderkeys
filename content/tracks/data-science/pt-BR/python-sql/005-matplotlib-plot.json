@@ -1,0 +1,26 @@
+{
+  "id": "005-matplotlib-plot",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "Matplotlib Plot",
+  "description": "Digite código de plotagem matplotlib.",
+  "difficulty": 3,
+  "estimatedMinutes": 2,
+  "skills": [
+    "matplotlib",
+    "visualization"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "import matplotlib.pyplot as plt\nplt.plot(x, y, label='tendencia')\nplt.legend()",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

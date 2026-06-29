@@ -1,0 +1,18 @@
+{
+  "appName": "CoderKeys",
+  "tagline": "Habilidades de mecanografía para programadores y redactores técnicos",
+  "nav": {
+    "catalog": "Catálogo",
+    "dashboard": "Panel",
+    "settings": "Ajustes",
+    "github": "GitHub"
+  },
+  "actions": {
+    "start": "Empezar",
+    "retry": "Intentar de nuevo",
+    "back": "Volver",
+    "save": "Guardar"
+  },
+  "difficulty": "Dificultad",
+  "minutes": "min"
+}

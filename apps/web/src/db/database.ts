@@ -1,11 +1,12 @@
 import Dexie, { type EntityTable } from 'dexie';
-import type { Locale } from '@coderkeys/schemas';
+import type { BuiltInThemeId, Locale } from '@coderkeys/schemas';
 
 export interface UserSettings {
   id: 'default';
   uiLocale: Locale;
   contentLocale: Locale;
   theme: 'light' | 'dark' | 'system';
+  colorTheme: BuiltInThemeId;
   strictMode: boolean;
   soundEnabled: boolean;
 }
@@ -48,6 +49,22 @@ export class CoderKeysDatabase extends Dexie {
       lessonProgress: 'lessonId, track, module, lastPlayedAt',
       sessions: 'id, lessonId, completedAt',
     });
+
+    this.version(2)
+      .stores({
+        settings: 'id',
+        lessonProgress: 'lessonId, track, module, lastPlayedAt',
+        sessions: 'id, lessonId, completedAt',
+      })
+      .upgrade(async (tx) => {
+        const settings = await tx.table('settings').get('default');
+        if (settings && !settings.colorTheme) {
+          await tx.table('settings').put({
+            ...settings,
+            colorTheme: 'default-dark',
+          });
+        }
+      });
   }
 }
 
@@ -58,6 +75,7 @@ export const DEFAULT_SETTINGS: UserSettings = {
   uiLocale: 'en-US',
   contentLocale: 'en-US',
   theme: 'dark',
+  colorTheme: 'default-dark',
   strictMode: false,
   soundEnabled: false,
 };

@@ -1,0 +1,26 @@
+{
+  "id": "003-list-comprehension",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "en-US",
+  "title": "List Comprehension",
+  "description": "Type Python list comprehensions.",
+  "difficulty": 2,
+  "estimatedMinutes": 2,
+  "skills": [
+    "python",
+    "comprehensions"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "values = [x * 2 for x in range(10) if x % 2 == 0]",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minAccuracy": 90
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

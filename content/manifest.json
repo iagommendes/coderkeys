@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "tracks": [
     {
       "id": "programmers",
@@ -68,6 +68,84 @@
               "003-mensagem-erro",
               "004-passo-onboarding",
               "005-mensagem-commit"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "icon": "terminal",
+      "modules": [
+        {
+          "id": "docker-cli",
+          "skills": ["docker", "kubernetes", "terraform", "shell"],
+          "lessons": {
+            "en-US": [
+              "001-docker-run",
+              "002-docker-compose",
+              "003-kubectl-get",
+              "004-terraform-plan",
+              "005-shell-pipeline"
+            ],
+            "pt-BR": [
+              "001-docker-run",
+              "002-docker-compose",
+              "003-kubectl-get",
+              "004-terraform-plan",
+              "005-shell-pipeline"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data-science",
+      "icon": "chart",
+      "modules": [
+        {
+          "id": "python-sql",
+          "skills": ["python", "sql", "pandas", "numpy"],
+          "lessons": {
+            "en-US": [
+              "001-pandas-read",
+              "002-sql-select",
+              "003-list-comprehension",
+              "004-numpy-array",
+              "005-matplotlib-plot"
+            ],
+            "pt-BR": [
+              "001-pandas-read",
+              "002-sql-select",
+              "003-list-comprehension",
+              "004-numpy-array",
+              "005-matplotlib-plot"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "legal-translators",
+      "icon": "scale",
+      "modules": [
+        {
+          "id": "legal-terms",
+          "skills": ["legal", "contracts", "bilingual"],
+          "lessons": {
+            "en-US": [
+              "001-contract-clause",
+              "002-privacy-term",
+              "003-notary-term",
+              "004-litigation-term",
+              "005-ip-term"
+            ],
+            "pt-BR": [
+              "001-clausula-contrato",
+              "002-termo-privacidade",
+              "003-termo-cartorio",
+              "004-termo-litigio",
+              "005-termo-pi"
             ]
           }
         }

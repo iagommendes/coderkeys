@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { Locale } from '@coderkeys/schemas';
+import type { BuiltInThemeId, Locale } from '@coderkeys/schemas';
 import { useSettingsStore } from '@/shared/stores/settings.store';
 import {
   exportProgress,
@@ -9,7 +9,14 @@ import {
   type ProgressExport,
 } from '@/db/repositories/progress.repo';
 import { getManifest } from '@/features/catalog/lesson-loader';
+import { getBuiltInThemes } from '@/shared/lib/themes';
 import { Button, Card } from '@/shared/components/ui';
+
+const UI_LOCALES: { locale: Locale; label: string }[] = [
+  { locale: 'en-US', label: 'English' },
+  { locale: 'pt-BR', label: 'Português (BR)' },
+  { locale: 'es-ES', label: 'Español' },
+];
 
 export function SettingsPage() {
   const { t, i18n } = useTranslation('settings');
@@ -17,6 +24,7 @@ export function SettingsPage() {
     uiLocale,
     contentLocale,
     theme,
+    colorTheme,
     strictMode,
     soundEnabled,
     loaded,
@@ -24,6 +32,7 @@ export function SettingsPage() {
     setUiLocale,
     setContentLocale,
     setTheme,
+    setColorTheme,
     setStrictMode,
     setSoundEnabled,
   } = useSettingsStore();
@@ -31,6 +40,7 @@ export function SettingsPage() {
   const [message, setMessage] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
   const manifest = getManifest();
+  const builtInThemes = getBuiltInThemes();
 
   useEffect(() => {
     void load();
@@ -97,37 +107,37 @@ export function SettingsPage() {
       <Card className="space-y-4">
         <div>
           <label className="text-sm font-medium">{t('uiLocale')}</label>
-          <div className="mt-2 flex gap-2">
-            <LocaleButton active={uiLocale === 'en-US'} onClick={() => handleUiLocale('en-US')}>
-              English
-            </LocaleButton>
-            <LocaleButton active={uiLocale === 'pt-BR'} onClick={() => handleUiLocale('pt-BR')}>
-              Português (BR)
-            </LocaleButton>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {UI_LOCALES.map(({ locale, label }) => (
+              <LocaleButton
+                key={locale}
+                active={uiLocale === locale}
+                onClick={() => handleUiLocale(locale)}
+              >
+                {label}
+              </LocaleButton>
+            ))}
           </div>
         </div>
 
         <div>
           <label className="text-sm font-medium">{t('contentLocale')}</label>
-          <div className="mt-2 flex gap-2">
-            <LocaleButton
-              active={contentLocale === 'en-US'}
-              onClick={() => void setContentLocale('en-US')}
-            >
-              English
-            </LocaleButton>
-            <LocaleButton
-              active={contentLocale === 'pt-BR'}
-              onClick={() => void setContentLocale('pt-BR')}
-            >
-              Português (BR)
-            </LocaleButton>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {UI_LOCALES.map(({ locale, label }) => (
+              <LocaleButton
+                key={locale}
+                active={contentLocale === locale}
+                onClick={() => void setContentLocale(locale)}
+              >
+                {label}
+              </LocaleButton>
+            ))}
           </div>
         </div>
 
         <div>
-          <label className="text-sm font-medium">{t('theme')}</label>
-          <div className="mt-2 flex gap-2">
+          <label className="text-sm font-medium">{t('appearance')}</label>
+          <div className="mt-2 flex flex-wrap gap-2">
             <LocaleButton active={theme === 'light'} onClick={() => void setTheme('light')}>
               {t('themeLight')}
             </LocaleButton>
@@ -137,6 +147,22 @@ export function SettingsPage() {
             <LocaleButton active={theme === 'system'} onClick={() => void setTheme('system')}>
               {t('themeSystem')}
             </LocaleButton>
+          </div>
+        </div>
+
+        <div>
+          <label className="text-sm font-medium">{t('colorTheme')}</label>
+          <p className="text-xs text-muted">{t('colorThemeDesc')}</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {builtInThemes.map((item) => (
+              <LocaleButton
+                key={item.id}
+                active={colorTheme === item.id}
+                onClick={() => void setColorTheme(item.id as BuiltInThemeId)}
+              >
+                {item.name}
+              </LocaleButton>
+            ))}
           </div>
         </div>
 

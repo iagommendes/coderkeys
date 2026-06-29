@@ -12,6 +12,8 @@ export function CharDisplay({ passage, input, display }: CharDisplayProps) {
 
   return (
     <div
+      data-testid="lesson-passage"
+      data-passage={passage}
       className={cn(
         'rounded-xl border border-border bg-surface p-6 leading-relaxed transition-colors',
         display === 'code' ? 'font-mono text-sm whitespace-pre-wrap' : 'text-base',

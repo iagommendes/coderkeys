@@ -34,6 +34,15 @@ body {
   @apply min-h-screen;
 }
 
+/* RTL readiness: use logical properties in new components */
+[dir='rtl'] {
+  text-align: start;
+}
+
+[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}
+
 .char-current {
   animation: pulse-cursor 1s ease-in-out infinite;
 }

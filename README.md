@@ -4,8 +4,10 @@ Open-source, local-first typing tutor tailored for **programmers** and **technic
 
 ## Features
 
-- **Skill-based tracks** — Programmers (code syntax, symbols) and Technical Writers (requirements, documentation, translation)
-- **Bilingual** — Interface and lessons in `en-US` and `pt-BR`
+- **Skill-based tracks** — Programmers, Technical Writers, DevOps, Data Science, and Legal Translators
+- **Multilingual** — UI in `en-US`, `pt-BR`, and `es-ES`; lessons in `en-US` and `pt-BR` (60+ lessons)
+- **Custom themes** — Built-in dark, light, and Dracula color palettes
+- **Desktop app** — Optional Tauri 2 wrapper for Linux, macOS, and Windows
 - **Progress dashboard** — WPM charts, error heatmap, lesson suggestions
 - **Translation mode** — Practice bilingual technical writing
 - **100% local** — No backend, no cloud costs; progress saved in IndexedDB
@@ -31,7 +33,12 @@ pnpm preview          # Preview production build locally
 pnpm test             # Run all tests
 pnpm validate-content # Validate lesson JSON files
 pnpm check-i18n       # Verify translation key parity
+pnpm test:e2e         # Playwright end-to-end tests
+pnpm tauri:dev        # Desktop app (dev)
+pnpm tauri:build      # Desktop app (release)
 ```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contributor guidelines.
 
 ## Project Structure
 
@@ -41,6 +48,7 @@ coderkeys/
 ├── packages/engine/    # Typing engine (WPM, accuracy) — framework-agnostic
 ├── packages/schemas/   # Zod schemas for lessons and progress
 ├── content/            # Lesson content (contributors edit here)
+├── src-tauri/          # Tauri 2 desktop wrapper
 └── docs/               # Architecture and planning docs
 ```
 
@@ -51,7 +59,7 @@ coderkeys/
 3. Run `pnpm validate-content`
 4. Open a Pull Request
 
-See [docs/PLANEJAMENTO-ARQUITETURA.md](docs/PLANEJAMENTO-ARQUITETURA.md) for the full architecture plan.
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [content/CONTRIBUTING-CONTENT.md](content/CONTRIBUTING-CONTENT.md).
 
 ## License
 
