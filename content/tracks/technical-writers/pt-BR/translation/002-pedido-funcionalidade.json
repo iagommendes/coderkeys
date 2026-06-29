@@ -1,0 +1,22 @@
+{
+  "id": "002-pedido-funcionalidade",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Pedido de Funcionalidade",
+  "description": "Traduza um requisito de produto para o português.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": ["translation", "requirements"],
+  "mode": "translation",
+  "content": {
+    "text": "O sistema deve permitir que administradores exportem dados de usuários em formato CSV para auditorias de conformidade.",
+    "sourceText": "The system must allow admins to export user data in CSV format for compliance audits.",
+    "display": "prose",
+    "language": "pt-BR"
+  },
+  "goals": { "minAccuracy": 93 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

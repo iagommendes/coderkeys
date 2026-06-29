@@ -2,21 +2,29 @@ import { create } from 'zustand';
 import type { Locale } from '@coderkeys/schemas';
 import { getSettings, saveSettings } from '@/db/repositories/settings.repo';
 
+type Theme = 'light' | 'dark' | 'system';
+
 interface SettingsState {
   uiLocale: Locale;
   contentLocale: Locale;
+  theme: Theme;
   strictMode: boolean;
+  soundEnabled: boolean;
   loaded: boolean;
   load: () => Promise<void>;
   setUiLocale: (locale: Locale) => Promise<void>;
   setContentLocale: (locale: Locale) => Promise<void>;
+  setTheme: (theme: Theme) => Promise<void>;
   setStrictMode: (strict: boolean) => Promise<void>;
+  setSoundEnabled: (enabled: boolean) => Promise<void>;
 }
 
 export const useSettingsStore = create<SettingsState>((set) => ({
   uiLocale: 'en-US',
   contentLocale: 'en-US',
+  theme: 'dark',
   strictMode: false,
+  soundEnabled: false,
   loaded: false,
 
   load: async () => {
@@ -24,7 +32,9 @@ export const useSettingsStore = create<SettingsState>((set) => ({
     set({
       uiLocale: settings.uiLocale,
       contentLocale: settings.contentLocale,
+      theme: settings.theme,
       strictMode: settings.strictMode,
+      soundEnabled: settings.soundEnabled,
       loaded: true,
     });
   },
@@ -39,8 +49,18 @@ export const useSettingsStore = create<SettingsState>((set) => ({
     set({ contentLocale: locale });
   },
 
+  setTheme: async (theme) => {
+    await saveSettings({ theme });
+    set({ theme });
+  },
+
   setStrictMode: async (strict) => {
     await saveSettings({ strictMode: strict });
     set({ strictMode: strict });
+  },
+
+  setSoundEnabled: async (enabled) => {
+    await saveSettings({ soundEnabled: enabled });
+    set({ soundEnabled: enabled });
   },
 }));

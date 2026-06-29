@@ -8,5 +8,10 @@
   "goalMet": "Goal met",
   "goalMissed": "Keep practicing",
   "pressToStart": "Click here or press any key to start",
-  "strictModeHint": "Strict mode: errors block progress"
+  "strictModeHint": "Strict mode: errors block progress",
+  "sourceText": "Source text",
+  "wordAccuracy": "Word accuracy",
+  "paused": "Paused",
+  "pressEscToResume": "Press Esc to resume",
+  "shortcuts": "Esc: pause · Ctrl+Enter: restart"
 }

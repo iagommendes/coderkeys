@@ -1,0 +1,22 @@
+{
+  "id": "004-passo-onboarding",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Passo de Onboarding",
+  "description": "Traduza texto de onboarding para uma ferramenta de desenvolvimento.",
+  "difficulty": 3,
+  "estimatedMinutes": 3,
+  "skills": ["translation", "documentation"],
+  "mode": "translation",
+  "content": {
+    "text": "Conecte seu repositório para habilitar deploys automáticos a cada push na branch principal.",
+    "sourceText": "Connect your repository to enable automatic deployments on every push to the main branch.",
+    "display": "prose",
+    "language": "pt-BR"
+  },
+  "goals": { "minAccuracy": 92 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

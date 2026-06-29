@@ -1,0 +1,22 @@
+{
+  "id": "001-redefinir-senha",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Fluxo de Redefinição de Senha",
+  "description": "Traduza a história de usuário do inglês para o português.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": ["translation", "user-stories"],
+  "mode": "translation",
+  "content": {
+    "text": "Como usuário cadastrado, eu quero redefinir minha senha para recuperar o acesso à minha conta.",
+    "sourceText": "As a registered user, I want to reset my password so that I can regain access to my account.",
+    "display": "prose",
+    "language": "pt-BR"
+  },
+  "goals": { "minAccuracy": 95 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

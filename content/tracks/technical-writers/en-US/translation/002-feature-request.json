@@ -1,0 +1,22 @@
+{
+  "id": "002-feature-request",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Feature Request",
+  "description": "Translate a product feature requirement to English.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": ["translation", "requirements"],
+  "mode": "translation",
+  "content": {
+    "text": "The system must allow admins to export user data in CSV format for compliance audits.",
+    "sourceText": "O sistema deve permitir que administradores exportem dados de usuários em formato CSV para auditorias de conformidade.",
+    "display": "prose",
+    "language": "en-US"
+  },
+  "goals": { "minAccuracy": 93 },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}
