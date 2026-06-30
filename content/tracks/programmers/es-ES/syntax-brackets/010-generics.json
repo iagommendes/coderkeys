@@ -1,0 +1,27 @@
+{
+  "id": "010-generics",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Genéricos en TypeScript",
+  "description": "Practica sintaxis de funciones e interfaces genéricas.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "generics",
+    "typescript"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "function pick<T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> {\n  return keys.reduce((acc, k) => ({ ...acc, [k]: obj[k] }), {} as Pick<T, K>);\n}",
+    "display": "code",
+    "language": "typescript"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

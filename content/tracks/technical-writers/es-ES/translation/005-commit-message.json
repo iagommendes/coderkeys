@@ -1,0 +1,26 @@
+{
+  "id": "005-commit-message",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Mensaje de commit",
+  "description": "Traduce una convención de mensaje de commit.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "feat(auth): añadir inicio de sesión con proveedor OAuth2",
+    "display": "prose",
+    "sourceText": "feat(auth): add OAuth2 provider sign-in"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

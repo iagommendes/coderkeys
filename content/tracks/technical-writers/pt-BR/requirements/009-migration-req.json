@@ -1,0 +1,26 @@
+{
+  "id": "009-migration-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Requisito de Migração",
+  "description": "Descreva um requisito de migração de dados.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "migration",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Registros legados de clientes devem ser migrados sem perda de dados e com plano de rollback validado em staging.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

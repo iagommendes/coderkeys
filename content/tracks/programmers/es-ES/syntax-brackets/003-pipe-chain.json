@@ -1,0 +1,27 @@
+{
+  "id": "003-pipe-chain",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Cadena de pipes",
+  "description": "Practica encadenamiento con operador pipe.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "pipes",
+    "functional"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const result = data |> filterActive |> sortByName |> take(10);",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

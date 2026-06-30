@@ -1,0 +1,27 @@
+{
+  "id": "006-rate-limit-msg",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Mensaje de límite de tasa",
+  "description": "Traduce un error de límite de tasa.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation",
+    "errors"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "Has superado el límite de solicitudes. Espera un minuto e inténtalo de nuevo.",
+    "display": "prose",
+    "sourceText": "Você excedeu o limite de requisições. Aguarde um minuto e tente novamente."
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

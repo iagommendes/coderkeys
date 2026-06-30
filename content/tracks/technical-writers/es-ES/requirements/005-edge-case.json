@@ -1,0 +1,25 @@
+{
+  "id": "005-edge-case",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Caso límite",
+  "description": "Describe un caso límite en requisitos.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "edge-cases"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Si el usuario envía un archivo vacío, el sistema debe rechazar la carga con un mensaje de error claro y código 400.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "id": "008-compliance-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Requisito de Conformidade",
+  "description": "Pratique redação de requisitos orientados à conformidade.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "compliance",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Dados pessoais devem ser armazenados na região da UE e excluídos em até 30 dias após encerramento da conta.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

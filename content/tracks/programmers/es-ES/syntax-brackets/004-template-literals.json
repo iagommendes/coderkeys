@@ -1,0 +1,26 @@
+{
+  "id": "004-template-literals",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Template literals",
+  "description": "Practica template literals con interpolación.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "templates"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const msg = `Usuario ${user.name} tiene ${user.score} puntos`;",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

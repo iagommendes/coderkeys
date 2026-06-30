@@ -1,0 +1,27 @@
+{
+  "id": "008-api-deprecation",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Deprecación de API",
+  "description": "Traduce mensaje de deprecación de API.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "translation",
+    "api-docs"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "Este endpoint está obsoleto y se eliminará el 2026-12-01. Migra a /v2/users.",
+    "display": "prose",
+    "sourceText": "Este endpoint está obsoleto e será removido em 2026-12-01. Migre para /v2/users."
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

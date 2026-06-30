@@ -1,0 +1,27 @@
+{
+  "id": "006-destructuring",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Desestructuración anidada",
+  "description": "Practica desestructuración anidada de objetos y arrays.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "destructuring",
+    "objects"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const { user: { name, address: { city } } } = payload;\nconsole.log(name, city);",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,27 @@
+{
+  "id": "008-pandas-merge",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "Merge no Pandas",
+  "description": "Faça merge de DataFrames por chaves.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "pandas",
+    "merge"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "merged = users.merge(orders, on='user_id', how='left', validate='one_to_many')",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

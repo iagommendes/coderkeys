@@ -1,0 +1,27 @@
+{
+  "id": "010-seaborn-plot",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "Gráfico Seaborn",
+  "description": "Crie um snippet de visualização seaborn.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "seaborn",
+    "visualization"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "import seaborn as sns\nsns.scatterplot(data=df, x='latency', y='errors', hue='region')",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

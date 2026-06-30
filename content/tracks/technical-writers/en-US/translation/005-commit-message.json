@@ -5,9 +5,12 @@
   "locale": "en-US",
   "title": "Commit Message",
   "description": "Translate a conventional commit message.",
-  "difficulty": 2,
+  "difficulty": 3,
   "estimatedMinutes": 2,
-  "skills": ["translation", "git"],
+  "skills": [
+    "translation",
+    "git"
+  ],
   "mode": "translation",
   "content": {
     "text": "fix(auth): prevent token refresh loop when session cookie is missing",
@@ -15,7 +18,9 @@
     "display": "prose",
     "language": "en-US"
   },
-  "goals": { "minAccuracy": 90 },
+  "goals": {
+    "minAccuracy": 90
+  },
   "author": "coderkeys-team",
   "source": null,
   "version": 1

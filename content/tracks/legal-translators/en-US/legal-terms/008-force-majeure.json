@@ -1,0 +1,26 @@
+{
+  "id": "008-force-majeure",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "Force Majeure",
+  "description": "Practice force majeure contractual language.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "legal",
+    "contracts"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Neither party shall be liable for delays caused by events beyond reasonable control, including natural disasters.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

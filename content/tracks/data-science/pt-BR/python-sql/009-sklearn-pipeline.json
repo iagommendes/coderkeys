@@ -1,0 +1,27 @@
+{
+  "id": "009-sklearn-pipeline",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "Pipeline Sklearn",
+  "description": "Defina um pipeline de pré-processamento scikit-learn.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "sklearn",
+    "pipeline"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "pipe = Pipeline([('scale', StandardScaler()), ('clf', LogisticRegression())])\npipe.fit(X_train, y_train)",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

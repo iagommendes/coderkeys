@@ -1,0 +1,27 @@
+{
+  "id": "006-groupby-agg",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "pt-BR",
+  "title": "Pandas GroupBy",
+  "description": "Pratique agregações groupby no pandas.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "pandas",
+    "aggregation"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "df.groupby('region')['revenue'].agg(['sum', 'mean', 'count'])",
+    "display": "code",
+    "language": "python"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

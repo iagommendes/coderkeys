@@ -1,0 +1,25 @@
+{
+  "id": "001-user-story",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Historia de usuario",
+  "description": "Practica redactar una historia de usuario clara.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "user-stories"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Como administrador, quiero exportar informes en CSV para analizar métricas fuera de la plataforma.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

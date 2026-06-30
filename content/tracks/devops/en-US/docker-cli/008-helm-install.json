@@ -1,0 +1,27 @@
+{
+  "id": "008-helm-install",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "en-US",
+  "title": "Helm Install",
+  "description": "Type helm chart install commands.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "helm",
+    "kubernetes"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "helm upgrade --install api ./charts/api -n production --set image.tag=2.1.0",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

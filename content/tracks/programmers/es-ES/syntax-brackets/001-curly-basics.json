@@ -1,0 +1,26 @@
+{
+  "id": "001-curly-basics",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Bases de llaves",
+  "description": "Practica llaves de apertura y cierre en patrones comunes.",
+  "difficulty": 1,
+  "estimatedMinutes": 2,
+  "skills": [
+    "curly-braces"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const obj = { key: 'value' };\nif (true) {\n  console.log('hola');\n}",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 25,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

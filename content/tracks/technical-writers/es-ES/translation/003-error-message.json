@@ -1,0 +1,26 @@
+{
+  "id": "003-error-message",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Mensaje de error",
+  "description": "Traduce un mensaje de error de validación.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "translation"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "El campo correo electrónico no es válido. Introduce una dirección con formato correcto.",
+    "display": "prose",
+    "sourceText": "O campo e-mail é inválido. Informe um endereço com formato correto."
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

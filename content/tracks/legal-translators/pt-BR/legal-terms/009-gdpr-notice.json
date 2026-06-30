@@ -1,0 +1,26 @@
+{
+  "id": "009-gdpr-notice",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Aviso GDPR",
+  "description": "Digite texto de aviso de privacidade relacionado ao GDPR.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "legal",
+    "privacy"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Você pode solicitar acesso, correção ou exclusão dos seus dados pessoais entrando em contato com o encarregado de proteção de dados.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

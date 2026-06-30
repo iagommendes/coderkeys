@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "tracks": [
     {
       "id": "programmers",
@@ -7,21 +7,47 @@
       "modules": [
         {
           "id": "syntax-brackets",
-          "skills": ["brackets", "symbols", "curly-braces"],
+          "skills": [
+            "brackets",
+            "symbols",
+            "curly-braces"
+          ],
           "lessons": {
             "en-US": [
               "001-curly-basics",
               "002-array-brackets",
               "003-pipe-chain",
               "004-template-literals",
-              "005-arrow-functions"
+              "005-arrow-functions",
+              "006-destructuring",
+              "007-optional-chaining",
+              "008-spread-rest",
+              "009-regex-literals",
+              "010-generics"
             ],
             "pt-BR": [
               "001-chaves-basico",
               "002-colchetes-array",
               "003-cadeia-pipe",
               "004-template-literals",
-              "005-arrow-functions"
+              "005-arrow-functions",
+              "006-destructuring",
+              "007-optional-chaining",
+              "008-spread-rest",
+              "009-regex-literals",
+              "010-generics"
+            ],
+            "es-ES": [
+              "001-curly-basics",
+              "002-array-brackets",
+              "003-pipe-chain",
+              "004-template-literals",
+              "005-arrow-functions",
+              "006-destructuring",
+              "007-optional-chaining",
+              "008-spread-rest",
+              "009-regex-literals",
+              "010-generics"
             ]
           }
         }
@@ -33,41 +59,91 @@
       "modules": [
         {
           "id": "requirements",
-          "skills": ["user-stories", "acceptance-criteria"],
+          "skills": [
+            "user-stories",
+            "acceptance-criteria"
+          ],
           "lessons": {
             "en-US": [
               "001-user-story",
               "002-acceptance-criteria",
               "003-given-when-then",
               "004-api-requirement",
-              "005-edge-case"
+              "005-edge-case",
+              "006-performance-req",
+              "007-security-req",
+              "008-compliance-req",
+              "009-migration-req",
+              "010-observability-req"
             ],
             "pt-BR": [
               "001-historia-usuario",
               "002-criterios-aceite",
               "003-dado-quando-entao",
               "004-requisito-api",
-              "005-caso-limite"
+              "005-caso-limite",
+              "006-performance-req",
+              "007-security-req",
+              "008-compliance-req",
+              "009-migration-req",
+              "010-observability-req"
+            ],
+            "es-ES": [
+              "001-user-story",
+              "002-acceptance-criteria",
+              "003-given-when-then",
+              "004-api-requirement",
+              "005-edge-case",
+              "006-performance-req",
+              "007-security-req",
+              "008-compliance-req",
+              "009-migration-req",
+              "010-observability-req"
             ]
           }
         },
         {
           "id": "translation",
-          "skills": ["translation", "bilingual"],
+          "skills": [
+            "translation",
+            "bilingual"
+          ],
           "lessons": {
             "en-US": [
               "001-password-reset",
               "002-feature-request",
               "003-error-message",
               "004-onboarding-step",
-              "005-commit-message"
+              "005-commit-message",
+              "006-rate-limit-msg",
+              "007-maintenance-notice",
+              "008-api-deprecation",
+              "009-support-reply",
+              "010-release-notes"
             ],
             "pt-BR": [
               "001-redefinir-senha",
               "002-pedido-funcionalidade",
               "003-mensagem-erro",
               "004-passo-onboarding",
-              "005-mensagem-commit"
+              "005-mensagem-commit",
+              "006-rate-limit-msg",
+              "007-maintenance-notice",
+              "008-api-deprecation",
+              "009-support-reply",
+              "010-release-notes"
+            ],
+            "es-ES": [
+              "001-password-reset",
+              "002-feature-request",
+              "003-error-message",
+              "004-onboarding-step",
+              "005-commit-message",
+              "006-rate-limit-msg",
+              "007-maintenance-notice",
+              "008-api-deprecation",
+              "009-support-reply",
+              "010-release-notes"
             ]
           }
         }
@@ -79,21 +155,36 @@
       "modules": [
         {
           "id": "docker-cli",
-          "skills": ["docker", "kubernetes", "terraform", "shell"],
+          "skills": [
+            "docker",
+            "kubernetes",
+            "terraform",
+            "shell"
+          ],
           "lessons": {
             "en-US": [
               "001-docker-run",
               "002-docker-compose",
               "003-kubectl-get",
               "004-terraform-plan",
-              "005-shell-pipeline"
+              "005-shell-pipeline",
+              "006-docker-build",
+              "007-kubectl-apply",
+              "008-helm-install",
+              "009-ansible-playbook",
+              "010-journalctl"
             ],
             "pt-BR": [
               "001-docker-run",
               "002-docker-compose",
               "003-kubectl-get",
               "004-terraform-plan",
-              "005-shell-pipeline"
+              "005-shell-pipeline",
+              "006-docker-build",
+              "007-kubectl-apply",
+              "008-helm-install",
+              "009-ansible-playbook",
+              "010-journalctl"
             ]
           }
         }
@@ -105,21 +196,36 @@
       "modules": [
         {
           "id": "python-sql",
-          "skills": ["python", "sql", "pandas", "numpy"],
+          "skills": [
+            "python",
+            "sql",
+            "pandas",
+            "numpy"
+          ],
           "lessons": {
             "en-US": [
               "001-pandas-read",
               "002-sql-select",
               "003-list-comprehension",
               "004-numpy-array",
-              "005-matplotlib-plot"
+              "005-matplotlib-plot",
+              "006-groupby-agg",
+              "007-sql-join",
+              "008-pandas-merge",
+              "009-sklearn-pipeline",
+              "010-seaborn-plot"
             ],
             "pt-BR": [
               "001-pandas-read",
               "002-sql-select",
               "003-list-comprehension",
               "004-numpy-array",
-              "005-matplotlib-plot"
+              "005-matplotlib-plot",
+              "006-groupby-agg",
+              "007-sql-join",
+              "008-pandas-merge",
+              "009-sklearn-pipeline",
+              "010-seaborn-plot"
             ]
           }
         }
@@ -131,21 +237,35 @@
       "modules": [
         {
           "id": "legal-terms",
-          "skills": ["legal", "contracts", "bilingual"],
+          "skills": [
+            "legal",
+            "contracts",
+            "bilingual"
+          ],
           "lessons": {
             "en-US": [
               "001-contract-clause",
               "002-privacy-term",
               "003-notary-term",
               "004-litigation-term",
-              "005-ip-term"
+              "005-ip-term",
+              "006-arbitration-clause",
+              "007-nda-term",
+              "008-force-majeure",
+              "009-gdpr-notice",
+              "010-ip-assignment"
             ],
             "pt-BR": [
               "001-clausula-contrato",
               "002-termo-privacidade",
               "003-termo-cartorio",
               "004-termo-litigio",
-              "005-termo-pi"
+              "005-termo-pi",
+              "006-arbitration-clause",
+              "007-nda-term",
+              "008-force-majeure",
+              "009-gdpr-notice",
+              "010-ip-assignment"
             ]
           }
         }

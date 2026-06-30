@@ -1,0 +1,26 @@
+{
+  "id": "010-observability-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Requisito de observabilidad",
+  "description": "Escribe requisitos de observabilidad para servicios en producción.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "observability",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Cada servicio debe exponer métricas de salud, readiness y latencia con umbrales de alerta documentados en el runbook.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

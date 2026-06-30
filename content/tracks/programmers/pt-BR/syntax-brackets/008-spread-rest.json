@@ -1,0 +1,27 @@
+{
+  "id": "008-spread-rest",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "pt-BR",
+  "title": "Spread e Rest",
+  "description": "Pratique spread em arrays e merge de objetos.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "spread",
+    "rest"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const merged = { ...defaults, ...overrides, version: 2 };\nconst all = [...items, ...extras];",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

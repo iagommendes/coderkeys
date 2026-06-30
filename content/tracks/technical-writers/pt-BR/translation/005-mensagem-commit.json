@@ -5,9 +5,12 @@
   "locale": "pt-BR",
   "title": "Mensagem de Commit",
   "description": "Traduza uma mensagem de commit convencional.",
-  "difficulty": 2,
+  "difficulty": 3,
   "estimatedMinutes": 2,
-  "skills": ["translation", "git"],
+  "skills": [
+    "translation",
+    "git"
+  ],
   "mode": "translation",
   "content": {
     "text": "fix(auth): evitar loop de refresh de token quando o cookie de sessão está ausente",
@@ -15,7 +18,9 @@
     "display": "prose",
     "language": "pt-BR"
   },
-  "goals": { "minAccuracy": 90 },
+  "goals": {
+    "minAccuracy": 90
+  },
   "author": "coderkeys-team",
   "source": null,
   "version": 1

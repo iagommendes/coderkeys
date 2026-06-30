@@ -1,0 +1,26 @@
+{
+  "id": "009-migration-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Migration Requirement",
+  "description": "Describe a data migration requirement.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "migration",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Legacy customer records must be migrated with zero data loss and a rollback plan validated in staging.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "id": "008-compliance-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Requisito de cumplimiento",
+  "description": "Practica redacción de requisitos orientados al cumplimiento.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "compliance",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Los datos personales deben almacenarse en la región de la UE y eliminarse en 30 días tras el cierre de cuenta.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

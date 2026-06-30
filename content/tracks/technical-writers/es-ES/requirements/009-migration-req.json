@@ -1,0 +1,26 @@
+{
+  "id": "009-migration-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Requisito de migración",
+  "description": "Describe un requisito de migración de datos.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "migration",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Los registros heredados deben migrarse sin pérdida de datos y con plan de reversión validado en staging.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

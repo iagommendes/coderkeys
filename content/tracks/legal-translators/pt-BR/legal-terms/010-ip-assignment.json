@@ -1,0 +1,26 @@
+{
+  "id": "010-ip-assignment",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Cessão de PI",
+  "description": "Pratique cláusulas de cessão de propriedade intelectual.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "legal",
+    "ip"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "O contratado cede todos os direitos, títulos e interesses sobre o produto do trabalho à empresa mediante pagamento.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

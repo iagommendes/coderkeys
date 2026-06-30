@@ -1,0 +1,26 @@
+{
+  "id": "004-onboarding-step",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Paso de onboarding",
+  "description": "Traduce un paso de onboarding de producto.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "Conecta tu repositorio para importar proyectos y empezar a practicar en minutos.",
+    "display": "prose",
+    "sourceText": "Conecte seu repositório para importar projetos e começar a praticar em minutos."
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,27 @@
+{
+  "id": "010-release-notes",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Notas de versión",
+  "description": "Traduce una nota de versión corta.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "translation",
+    "release-notes"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "La versión 2.4 añade modo oscuro, mejora el rendimiento de exportación y corrige errores de timeout de sesión.",
+    "display": "prose",
+    "sourceText": "A versão 2.4 adiciona modo escuro, melhora performance de exportação e corrige bugs de timeout de sessão."
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

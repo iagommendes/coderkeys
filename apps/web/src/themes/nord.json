@@ -1,0 +1,17 @@
+{
+  "id": "nord",
+  "name": "Nord",
+  "author": "community",
+  "description": "Arctic, north-bluish color palette",
+  "colors": {
+    "surface": "#2e3440",
+    "surfaceElevated": "#3b4252",
+    "border": "#434c5e",
+    "accent": "#88c0d0",
+    "accentHover": "#81a1c1",
+    "success": "#a3be8c",
+    "error": "#bf616a",
+    "muted": "#4c566a",
+    "foreground": "#eceff4"
+  }
+}

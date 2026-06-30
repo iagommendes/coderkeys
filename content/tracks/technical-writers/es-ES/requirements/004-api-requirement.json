@@ -1,0 +1,26 @@
+{
+  "id": "004-api-requirement",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Requisito de API",
+  "description": "Documenta un requisito de endpoint REST.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "api",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "El endpoint GET /v1/users/{id} debe devolver 200 con el perfil del usuario o 404 si no existe.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "id": "002-array-brackets",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Corchetes de array",
+  "description": "Practica corchetes en arrays y acceso indexado.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "arrays"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const items = [1, 2, 3];\nconst first = items[0];\nitems.push(items[items.length - 1]);",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

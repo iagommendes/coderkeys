@@ -43,6 +43,7 @@ Create a JSON file in `apps/web/src/themes/`:
 | `default-dark` | Default dark palette (syncs with appearance) |
 | `default-light` | Default light palette (syncs with appearance) |
 | `dracula` | Dracula-inspired palette |
+| `nord` | Arctic, north-bluish palette |
 
 When `default-dark` or `default-light` is selected, the app picks the variant matching the current appearance (light/dark/system).
 
