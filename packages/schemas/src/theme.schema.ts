@@ -26,7 +26,7 @@ export const ThemeSchema = z.object({
     .optional(),
 });
 
-export const BuiltInThemeIdSchema = z.enum(['default-dark', 'default-light', 'dracula']);
+export const BuiltInThemeIdSchema = z.enum(['default-dark', 'default-light', 'dracula', 'nord']);
 
 export type Theme = z.infer<typeof ThemeSchema>;
 export type BuiltInThemeId = z.infer<typeof BuiltInThemeIdSchema>;

@@ -1,0 +1,26 @@
+{
+  "id": "006-arbitration-clause",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Cláusula de Arbitragem",
+  "description": "Pratique digitar linguagem de arbitragem.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "legal",
+    "contracts"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Qualquer disputa decorrente deste acordo será resolvida por arbitragem vinculante conforme as regras da câmara local.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

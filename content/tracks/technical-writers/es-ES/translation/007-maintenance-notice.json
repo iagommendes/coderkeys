@@ -1,0 +1,27 @@
+{
+  "id": "007-maintenance-notice",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Aviso de mantenimiento",
+  "description": "Traduce un aviso de ventana de mantenimiento.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation",
+    "notifications"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "El mantenimiento programado será el domingo de 02:00 a 04:00 UTC.",
+    "display": "prose",
+    "sourceText": "Manutenção programada ocorrerá no domingo das 02:00 às 04:00 UTC."
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

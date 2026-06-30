@@ -1,0 +1,26 @@
+{
+  "id": "006-performance-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Requisito de Performance",
+  "description": "Escreva um requisito de aceite de performance.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "performance",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "O endpoint de busca deve retornar resultados em até 200ms para 95% das requisições sob carga normal.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

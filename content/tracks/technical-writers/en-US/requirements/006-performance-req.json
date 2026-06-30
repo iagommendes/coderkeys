@@ -1,0 +1,26 @@
+{
+  "id": "006-performance-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Performance Requirement",
+  "description": "Write a performance acceptance requirement.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "performance",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "The search endpoint must return results within 200ms for 95% of requests under normal load.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

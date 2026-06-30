@@ -1,0 +1,26 @@
+{
+  "id": "008-compliance-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Compliance Requirement",
+  "description": "Practice compliance-oriented requirement writing.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "compliance",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Personal data must be stored in the EU region and deleted within 30 days of account closure.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

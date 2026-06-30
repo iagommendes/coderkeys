@@ -1,0 +1,26 @@
+{
+  "id": "007-nda-term",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "pt-BR",
+  "title": "Termo de NDA",
+  "description": "Digite redação de acordo de confidencialidade.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "legal",
+    "nda"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "A parte receptora não divulgará informações confidenciais, exceto quando exigido pela lei aplicável.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

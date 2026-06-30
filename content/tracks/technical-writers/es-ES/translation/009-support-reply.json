@@ -1,0 +1,27 @@
+{
+  "id": "009-support-reply",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Respuesta de soporte",
+  "description": "Traduce una respuesta de ticket de soporte.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation",
+    "support"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "Reprodujimos el problema y desplegamos una corrección. Borra la caché y confirma.",
+    "display": "prose",
+    "sourceText": "Reproduzimos o problema e implantamos uma correção. Limpe o cache e confirme."
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "id": "009-gdpr-notice",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "GDPR Notice",
+  "description": "Type GDPR-related privacy notice text.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "legal",
+    "privacy"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "You may request access, correction, or deletion of your personal data by contacting the data protection officer.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

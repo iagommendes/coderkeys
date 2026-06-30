@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { BuiltInThemeId, Locale } from '@coderkeys/schemas';
+import type { BuiltInThemeId, Locale, Theme } from '@coderkeys/schemas';
 import { useSettingsStore } from '@/shared/stores/settings.store';
 import {
   exportProgress,
@@ -153,15 +153,14 @@ export function SettingsPage() {
         <div>
           <label className="text-sm font-medium">{t('colorTheme')}</label>
           <p className="text-xs text-muted">{t('colorThemeDesc')}</p>
-          <div className="mt-2 flex flex-wrap gap-2">
+          <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-2">
             {builtInThemes.map((item) => (
-              <LocaleButton
+              <ThemeCard
                 key={item.id}
+                theme={item}
                 active={colorTheme === item.id}
-                onClick={() => void setColorTheme(item.id as BuiltInThemeId)}
-              >
-                {item.name}
-              </LocaleButton>
+                onSelect={() => void setColorTheme(item.id as BuiltInThemeId)}
+              />
             ))}
           </div>
         </div>
@@ -234,6 +233,58 @@ function LocaleButton({
     <Button variant={active ? 'primary' : 'secondary'} onClick={onClick}>
       {children}
     </Button>
+  );
+}
+
+function ThemeCard({
+  theme,
+  active,
+  onSelect,
+}: {
+  theme: Theme;
+  active: boolean;
+  onSelect: () => void;
+}) {
+  const swatches = [
+    theme.colors.surface,
+    theme.colors.accent,
+    theme.colors.success,
+    theme.colors.error,
+    theme.colors.foreground,
+  ];
+
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      className={`rounded-lg border p-3 text-left transition-colors ${
+        active
+          ? 'border-accent ring-2 ring-accent ring-offset-2 ring-offset-surface'
+          : 'border-border hover:border-accent/60'
+      }`}
+      style={{ backgroundColor: theme.colors.surfaceElevated }}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <span className="text-sm font-medium" style={{ color: theme.colors.foreground }}>
+          {theme.name}
+        </span>
+        {active && (
+          <span className="text-xs font-medium" style={{ color: theme.colors.accent }}>
+            ✓
+          </span>
+        )}
+      </div>
+      <div className="mt-2 flex gap-1">
+        {swatches.map((color) => (
+          <span
+            key={color}
+            className="h-4 flex-1 rounded-sm border border-black/10"
+            style={{ backgroundColor: color }}
+            aria-hidden
+          />
+        ))}
+      </div>
+    </button>
   );
 }
 

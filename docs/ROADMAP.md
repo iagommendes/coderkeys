@@ -1,7 +1,7 @@
 # CoderKeys — Roadmap Pós-Fase 3
 
 > **Última atualização:** 2026-06-29  
-> **Status do projeto:** Fases 1–3 concluídas (PRs [#1](https://github.com/iagommendes/coderkeys/pull/1)–[#4](https://github.com/iagommendes/coderkeys/pull/4))
+> **Status do projeto:** Fases 1–3 concluídas (PRs [#1](https://github.com/iagommendes/coderkeys/pull/1)–[#4](https://github.com/iagommendes/coderkeys/pull/4)); Sprint 4 concluído (PR [#26](https://github.com/iagommendes/coderkeys/pull/26))
 
 ---
 
@@ -11,13 +11,15 @@ O CoderKeys evoluiu de documento de arquitetura para produto open source funcion
 
 | Métrica atual | Valor |
 |---------------|-------|
-| Lições validadas | 60 (en-US + pt-BR) |
+| Lições validadas | 150 (en-US + pt-BR + es-ES parcial) |
 | Tracks | 5 |
 | Idiomas UI | en-US, pt-BR, es-ES |
-| Idiomas conteúdo | en-US, pt-BR |
+| Idiomas conteúdo | en-US, pt-BR, es-ES (programmers + technical-writers) |
+| Temas de cores | default-dark, default-light, Dracula, Nord |
 | Testes engine | 21 |
 | E2E Playwright | 2 fluxos |
-| Desktop | Tauri 2 (Linux CI ✅) |
+| Desktop | Tauri 2 (Linux, macOS, Windows CI ✅) |
+| Demo pública | https://iagommendes.github.io/coderkeys/ |
 
 ---
 
@@ -47,13 +49,13 @@ O CoderKeys evoluiu de documento de arquitetura para produto open source funcion
 
 | Item planejado | Status |
 |----------------|--------|
-| Lighthouse > 95 | ❌ Não implementado |
-| Desktop macOS/Windows CI | ❌ Só Linux |
-| Lições es-ES | ❌ Só metadados + UI |
-| Tema Nord | ❌ Só default + Dracula |
+| Lighthouse > 95 | ✅ Lighthouse CI no Sprint 4 |
+| Desktop macOS/Windows CI | ✅ Sprint 4 |
+| Lições es-ES | ✅ Sprint 5 (30 lições programmers + technical-writers) |
+| Tema Nord | ✅ Sprint 5 |
 | RTL implementado | ⚠️ CSS prep only |
 | CONTRIBUTING-CONTENT completo | ⚠️ Parcial |
-| Bundle < 500KB | ❌ ~1.3MB chunk principal |
+| Bundle < 500KB | ⚠️ Code splitting aplicado; chunk principal ainda ~240KB gzip |
 
 ---
 
@@ -87,7 +89,7 @@ Sprint 4 — Polish & Launch     Sprint 5 — Content & i18n
 | 4.4 | Desktop builds macOS + Windows | Média | [#9](https://github.com/iagommendes/coderkeys/issues/9) |
 | 4.5 | Atualizar doc de arquitetura (fases ✅) | Baixa | [#10](https://github.com/iagommendes/coderkeys/issues/10) |
 
-**Critério de conclusão:** Demo pública online, Lighthouse verde, releases desktop 3 plataformas.
+**Critério de conclusão:** Demo pública online, Lighthouse verde, releases desktop 3 plataformas. ✅ Concluído (PR #26).
 
 ---
 
@@ -102,7 +104,7 @@ Sprint 4 — Polish & Launch     Sprint 5 — Content & i18n
 | 5.3 | Tema Nord + galeria visual | Média | [#13](https://github.com/iagommendes/coderkeys/issues/13) |
 | 5.4 | Validação de progressão de difficulty | Média | [#14](https://github.com/iagommendes/coderkeys/issues/14) |
 
-**Critério de conclusão:** 90+ lições em 3 idiomas UI, 100+ em 2 idiomas de conteúdo.
+**Critério de conclusão:** 90+ lições em 3 idiomas UI, 100+ em 2 idiomas de conteúdo. ✅ 150 lições validadas; 30 es-ES em programmers + technical-writers.
 
 ---
 

@@ -2,11 +2,13 @@ import { ThemeSchema, type BuiltInThemeId, type Theme } from '@coderkeys/schemas
 import defaultDark from '@/themes/default-dark.json';
 import defaultLight from '@/themes/default-light.json';
 import dracula from '@/themes/dracula.json';
+import nord from '@/themes/nord.json';
 
 const themes: Record<BuiltInThemeId, Theme> = {
   'default-dark': ThemeSchema.parse(defaultDark),
   'default-light': ThemeSchema.parse(defaultLight),
   dracula: ThemeSchema.parse(dracula),
+  nord: ThemeSchema.parse(nord),
 };
 
 export function getBuiltInThemes(): Theme[] {

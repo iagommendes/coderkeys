@@ -1,0 +1,27 @@
+{
+  "id": "009-ansible-playbook",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "pt-BR",
+  "title": "Playbook Ansible",
+  "description": "Execute playbooks ansible para provisionamento.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "ansible",
+    "automation"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "ansible-playbook -i inventory/prod site.yml --tags deploy --check",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

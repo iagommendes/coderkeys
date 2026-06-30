@@ -11,6 +11,7 @@
     "lint": "pnpm -r lint",
     "typecheck": "pnpm --filter @coderkeys/schemas build && pnpm --filter @coderkeys/engine build && pnpm -r typecheck",
     "validate-content": "pnpm --filter @coderkeys/schemas build && tsx scripts/validate-content.ts",
+    "validate-difficulty": "pnpm --filter @coderkeys/schemas build && tsx scripts/validate-difficulty-progression.ts",
     "check-i18n": "tsx scripts/check-i18n-keys.ts",
     "content-preview": "pnpm --filter @coderkeys/schemas build && tsx scripts/content-preview.ts",
     "tauri": "tauri",

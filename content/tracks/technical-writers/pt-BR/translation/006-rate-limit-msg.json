@@ -1,0 +1,27 @@
+{
+  "id": "006-rate-limit-msg",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Mensagem de Rate Limit",
+  "description": "Traduza um erro de rate limit.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation",
+    "errors"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "Você excedeu o limite de requisições. Aguarde um minuto e tente novamente.",
+    "display": "prose",
+    "sourceText": "You have exceeded the request limit. Please wait a minute and try again."
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

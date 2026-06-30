@@ -1,0 +1,27 @@
+{
+  "id": "007-optional-chaining",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "pt-BR",
+  "title": "Optional Chaining",
+  "description": "Digite optional chaining e nullish coalescing.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "optional-chaining",
+    "operators"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const label = config?.ui?.theme?.name ?? 'default';\nreturn label.toUpperCase();",
+    "display": "code",
+    "language": "typescript"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

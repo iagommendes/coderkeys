@@ -1,0 +1,26 @@
+{
+  "id": "010-observability-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "en-US",
+  "title": "Observability Requirement",
+  "description": "Write observability requirements for production services.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "observability",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Each service must expose health, readiness, and latency metrics with alert thresholds documented in the runbook.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

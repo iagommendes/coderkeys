@@ -1,0 +1,27 @@
+{
+  "id": "007-sql-join",
+  "module": "python-sql",
+  "track": "data-science",
+  "locale": "en-US",
+  "title": "SQL Join",
+  "description": "Type a multi-table SQL join query.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "sql",
+    "joins"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "SELECT u.name, o.total FROM users u\nINNER JOIN orders o ON o.user_id = u.id;",
+    "display": "code",
+    "language": "sql"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

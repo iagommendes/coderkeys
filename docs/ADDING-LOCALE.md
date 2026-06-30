@@ -37,4 +37,4 @@ When adding an RTL locale, update `ThemeProvider` to set `dir` based on locale.
 |------|----|---------|
 | `en-US` | ✅ | ✅ |
 | `pt-BR` | ✅ | ✅ |
-| `es-ES` | ✅ | partial (metadata only; lessons coming via community) |
+| `es-ES` | ✅ | ✅ (programmers + technical-writers) |

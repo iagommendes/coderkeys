@@ -1,0 +1,25 @@
+{
+  "id": "002-acceptance-criteria",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Criterios de aceptación",
+  "description": "Escribe criterios de aceptación medibles.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "acceptance-criteria"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Dado un usuario autenticado, cuando exporta un informe, entonces el archivo CSV debe descargarse en menos de 5 segundos.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

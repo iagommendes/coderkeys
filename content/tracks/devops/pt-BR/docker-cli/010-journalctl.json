@@ -1,0 +1,27 @@
+{
+  "id": "010-journalctl",
+  "module": "docker-cli",
+  "track": "devops",
+  "locale": "pt-BR",
+  "title": "Logs com Journalctl",
+  "description": "Inspecione logs de serviços systemd.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "systemd",
+    "logs"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "journalctl -u api.service -f --since \"10 min ago\" | grep ERROR",
+    "display": "code",
+    "language": "bash"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

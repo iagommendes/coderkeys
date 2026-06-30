@@ -1,0 +1,25 @@
+{
+  "id": "003-given-when-then",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "es-ES",
+  "title": "Dado-Cuando-Entonces",
+  "description": "Practica formato Given-When-Then en español.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "gherkin"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Dado que el carrito tiene artículos, cuando el usuario aplica un cupón válido, entonces el total debe actualizarse con el descuento.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

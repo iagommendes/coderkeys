@@ -1,0 +1,26 @@
+{
+  "id": "010-ip-assignment",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "IP Assignment",
+  "description": "Practice intellectual property assignment clauses.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "legal",
+    "ip"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "The contractor hereby assigns all rights, title, and interest in the work product to the company upon payment.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

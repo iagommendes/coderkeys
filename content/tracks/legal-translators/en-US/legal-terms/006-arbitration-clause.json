@@ -1,0 +1,26 @@
+{
+  "id": "006-arbitration-clause",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "Arbitration Clause",
+  "description": "Practice typing arbitration language.",
+  "difficulty": 4,
+  "estimatedMinutes": 5,
+  "skills": [
+    "legal",
+    "contracts"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Any dispute arising from this agreement shall be resolved by binding arbitration under the rules of the local chamber.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

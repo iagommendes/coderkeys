@@ -1,0 +1,27 @@
+{
+  "id": "009-support-reply",
+  "module": "translation",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Resposta de Suporte",
+  "description": "Traduza uma resposta de ticket de suporte.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "translation",
+    "support"
+  ],
+  "mode": "translation",
+  "content": {
+    "text": "Reproduzimos o problema e implantamos uma correção. Limpe o cache e confirme.",
+    "display": "prose",
+    "sourceText": "We reproduced the issue and deployed a fix. Please clear your cache and confirm."
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

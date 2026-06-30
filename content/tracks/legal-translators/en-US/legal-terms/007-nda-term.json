@@ -1,0 +1,26 @@
+{
+  "id": "007-nda-term",
+  "module": "legal-terms",
+  "track": "legal-translators",
+  "locale": "en-US",
+  "title": "NDA Term",
+  "description": "Type confidentiality agreement wording.",
+  "difficulty": 4,
+  "estimatedMinutes": 4,
+  "skills": [
+    "legal",
+    "nda"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "The receiving party shall not disclose confidential information except as required by applicable law.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 40,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

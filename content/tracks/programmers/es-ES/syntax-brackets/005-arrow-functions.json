@@ -1,0 +1,26 @@
+{
+  "id": "005-arrow-functions",
+  "module": "syntax-brackets",
+  "track": "programmers",
+  "locale": "es-ES",
+  "title": "Arrow functions",
+  "description": "Practica funciones flecha y callbacks.",
+  "difficulty": 2,
+  "estimatedMinutes": 3,
+  "skills": [
+    "arrow-functions"
+  ],
+  "mode": "code",
+  "content": {
+    "text": "const doubled = values.map((n) => n * 2);\nconst sum = values.reduce((a, b) => a + b, 0);",
+    "display": "code",
+    "language": "javascript"
+  },
+  "goals": {
+    "minWpm": 30,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}

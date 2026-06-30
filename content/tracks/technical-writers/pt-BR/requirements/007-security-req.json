@@ -1,0 +1,26 @@
+{
+  "id": "007-security-req",
+  "module": "requirements",
+  "track": "technical-writers",
+  "locale": "pt-BR",
+  "title": "Requisito de Segurança",
+  "description": "Documente um requisito relacionado à segurança.",
+  "difficulty": 3,
+  "estimatedMinutes": 4,
+  "skills": [
+    "security",
+    "requirements"
+  ],
+  "mode": "prose",
+  "content": {
+    "text": "Todos os tokens de API devem expirar após 24 horas e suportar revogação imediata por administradores.",
+    "display": "prose"
+  },
+  "goals": {
+    "minWpm": 35,
+    "minAccuracy": 88
+  },
+  "author": "coderkeys-team",
+  "source": null,
+  "version": 1
+}
